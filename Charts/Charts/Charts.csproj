@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -26,7 +26,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <PublishUrl>http://localhost/MControl.Charts/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -52,6 +52,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -61,6 +62,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Nistec.Data, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
@@ -309,11 +311,11 @@
     <None Include="MControl.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Win_4.0.2.1\Printing\Printing\Printing.csproj">
+    <ProjectReference Include="..\..\Printing\Printing\Printing.csproj">
       <Project>{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}</Project>
       <Name>Printing</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Win_4.0.2.1\Win\Win\Win.csproj">
+    <ProjectReference Include="..\..\Win\Win\Win.csproj">
       <Project>{1E47FD52-925B-4F29-BDDE-A4233BE7B8A9}</Project>
       <Name>Win</Name>
     </ProjectReference>
