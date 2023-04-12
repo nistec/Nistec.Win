@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IlegalChar" xml:space="preserve">
+    <value>תו לא חוקי</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>נדרש שדה</value>
+  </data>
+  <data name="IndexOutBounds" xml:space="preserve">
+    <value>אינדקס מחוץ לתחום</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>כן</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>לא</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>בטל</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>נסה שוב</value>
+  </data>
+  <data name="Abort" xml:space="preserve">
+    <value>נכשל</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>אישור</value>
+  </data>
+  <data name="Ignore" xml:space="preserve">
+    <value>התעלם</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>מידע</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>שגיאה</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>אשר</value>
+  </data>
+  <data name="ErrorNotExpected" xml:space="preserve">
+    <value>אירעה שגיאה בלתי צפויה</value>
+  </data>
+  <data name="LargerIndexThanZero" xml:space="preserve">
+    <value>אינדקס חייב להיות גדול מ אפס</value>
+  </data>
+  <data name="NullArgument" xml:space="preserve">
+    <value>ארגומנטים אינם כוללים ערך</value>
+  </data>
+  <data name="KeyNotConfigured" xml:space="preserve">
+    <value>מפתח הצפנה אינו תקין</value>
+  </data>
+  <data name="SizeOfKeyInvalidates" xml:space="preserve">
+    <value>מפתח הצפנה חייב להכיל  {0} תוים</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>קובץ {0} לא נמצא</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>בתהליך</value>
+  </data>
+  <data name="MistakeConfigRemoting" xml:space="preserve">
+    <value>שגיאה בלתי צפויה אירעה בעת נסיון להעלות קובץ {0} פנה לתמיכה לקבלת עזרה</value>
+  </data>
+  <data name="ErrorConvertToNumber" xml:space="preserve">
+    <value>אירעה שגיאה בעת נסיון להמיר את הערך למספר</value>
+  </data>
+  <data name="ErrorConvertToDate/Time" xml:space="preserve">
+    <value>אירעה שגיאה בעת נסיון להמיר את הערך לתאריך/שעה</value>
+  </data>
+  <data name="True" xml:space="preserve">
+    <value>אמת</value>
+  </data>
+  <data name="False" xml:space="preserve">
+    <value>שקר</value>
+  </data>
+  <data name="On" xml:space="preserve">
+    <value>פעיל</value>
+  </data>
+  <data name="Off" xml:space="preserve">
+    <value>לא פעיל</value>
+  </data>
+  <data name="ErrorDataType" xml:space="preserve">
+    <value>סוג נתונים שגוי</value>
+  </data>
+  <data name="ErrorValidating" xml:space="preserve">
+    <value>אירעה שגיאה באימות הנתונים</value>
+  </data>
+  <data name="ErrorIncorrectFormat" xml:space="preserve">
+    <value>הערך אינו תואם את הגדרות עיצוב הנתונים</value>
+  </data>
+  <data name="OnlyDigitsBarAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספרים ומפרידים בלבד</value>
+  </data>
+  <data name="OnlyDigitsPointsAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר שלם או מספר עשרוני</value>
+  </data>
+  <data name="OnlyDigitsMinusSpaceAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר סימן מינוס או רווחים</value>
+  </data>
+  <data name="OnlyDigitsMinusParenthesesAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר סימן מינוס או רווחים או סוגריים</value>
+  </data>
+  <data name="OnlyDigitsMinusPointsAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר  שלם או עשרוני חיובי או שלילי</value>
+  </data>
+  <data name="OnlyDigitsMinusAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר  שלם חיובי או שלילי</value>
+  </data>
+  <data name="OnlyDigitsMinusPointsBarsAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר  שלם או עשרוני חיובי או שלילי עם מפרידים</value>
+  </data>
+  <data name="OnlyDigitsTwoPointsAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספרים עם שני נקודות בלבד</value>
+  </data>
+  <data name="OnlyDigitsPointsBarsAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר שלם או עשרוני עם מפרידי תאריך בלבד</value>
+  </data>
+  <data name="OnlyDigitsMinusBarsAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספר שלם  חיובי או שלילי עם מפרידי תאריך בלבד</value>
+  </data>
+  <data name="InvalidDateFormat" xml:space="preserve">
+    <value>{0} התאריך אינו תקני</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>תאריך שגוי</value>
+  </data>
+  <data name="InvalidEmail" xml:space="preserve">
+    <value> כתובת דאר אלקטרוני אינה תקנית</value>
+  </data>
+  <data name="InvalidIp" xml:space="preserve">
+    <value>כתובת  השרת אינה תקנית</value>
+  </data>
+  <data name="InvalidTelephoneFormat" xml:space="preserve">
+    <value>מספר טלפון אינו תקני</value>
+  </data>
+  <data name="InvalidTelephoneAreaFormat" xml:space="preserve">
+    <value>מספר טלפון/איזור חיוג אינו תקני</value>
+  </data>
+  <data name="InvalidTimeFormat" xml:space="preserve">
+    <value> {0} זמן לא תקני </value>
+  </data>
+  <data name="InvalidTime" xml:space="preserve">
+    <value>זמן שגוי</value>
+  </data>
+  <data name="InvalidNumber" xml:space="preserve">
+    <value>נדרש מספר</value>
+  </data>
+  <data name="OnlyDigitsAccepted" xml:space="preserve">
+    <value>ניתן להקליד מספרים בלבד</value>
+  </data>
+  <data name="InvalidZip" xml:space="preserve">
+    <value>מיקוד אינו תקני</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>קידומת אינה תקנית</value>
+  </data>
+  <data name="ContentNotExistInList" xml:space="preserve">
+    <value>הערך שהוקלד אינו נמצא ברשימה</value>
+  </data>
+  <data name="InaccessibleNode" xml:space="preserve">
+    <value>לא ניתן לגשת לתא הבא</value>
+  </data>
+  <data name="IncorrectNodeName" xml:space="preserve">
+    <value>נמצא שדה עם שם שגוי</value>
+  </data>
+  <data name="FinalElementNotFound" xml:space="preserve">
+    <value>נדרש שדה אחרון אך הוא לא נמצא</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>הצג הכל</value>
+  </data>
+  <data name="HideAll" xml:space="preserve">
+    <value>הסתר הכל</value>
+  </data>
+  <data name="ElementNotFound" xml:space="preserve">
+    <value>שדה {0} לא נמצא</value>
+  </data>
+  <data name="NodeNotFound" xml:space="preserve">
+    <value>נדרש שדה {0} אך הוא לא נמצא</value>
+  </data>
+  <data name="CantInsert" xml:space="preserve">
+    <value>לא ניתן להוסיף נתונים לאחר סיום התהליך הנוכחי</value>
+  </data>
+  <data name="CantRemove" xml:space="preserve">
+    <value>לא ניתן לשלוף נתונים לאחר סיום התהליך הנוכחי</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>סגור</value>
+  </data>
+  <data name="Prominent" xml:space="preserve">
+    <value>המשך</value>
+  </data>
+  <data name="CalculateAgain" xml:space="preserve">
+    <value>חשב שוב</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>דף קודם</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>דף הבא</value>
+  </data>
+  <data name="NewPageVertical" xml:space="preserve">
+    <value>דף חדש</value>
+  </data>
+  <data name="NewPageHorizontal" xml:space="preserve">
+    <value>דף חדש</value>
+  </data>
+  <data name="InvalidDirectory" xml:space="preserve">
+    <value>נתיב שגוי</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>קודם</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>הבא</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>סיום</value>
+  </data>
+  <data name="StepNotFound" xml:space="preserve">
+    <value>שלב לא קיים</value>
+  </data>
+  <data name="FirstStepCannotBeNull" xml:space="preserve">
+    <value>שלב ראשון חייב להכיל ערך</value>
+  </data>
+  <data name="CloseWizard" xml:space="preserve">
+    <value>האם לסגור את האשף</value>
+  </data>
+  <data name="MessageToLeaveAssistant" xml:space="preserve">
+    <value>האם לסגור ? הנתונים לא יישמרו</value>
+  </data>
+  <data name="NoExistTaskPanels" xml:space="preserve">
+    <value>לא נמצא דף משימות במערכת</value>
+  </data>
+  <data name="OutOfRange" xml:space="preserve">
+    <value>הערך מחוץ לתחום ,הערך הנדרש הוא בין {0} ל {1}  בלבד  </value>
+  </data>
+  <data name="InvalidRegx" xml:space="preserve">
+    <value>ביטוי שגוי</value>
+  </data>
+  <data name="ValueNotMatchMask" xml:space="preserve">
+    <value>הערך אינו תואם למסיכה {0} בשדה</value>
+  </data>
+  <data name="CorrectThisValue" xml:space="preserve">
+    <value>האם לתקן את הערך השגוי </value>
+  </data>
+  <data name="IncorrectValueIntoColumn" xml:space="preserve">
+    <value> {0} ערך שגוי בעמודה</value>
+  </data>
+</root>

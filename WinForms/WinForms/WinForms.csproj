@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C26B37C8-BC2A-4C9C-B0BD-E6E9E5C8D0B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nistec.WinForms</RootNamespace>
+    <AssemblyName>Nistec.WinForms</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/MControl.WinForms/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\References\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\References\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nistec.Cache, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Nistec.Channels, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="Nistec.Data, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Nistec.Lib, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseCtl\CtlUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Binding\BindCollection.cs" />
+    <Compile Include="Binding\BindContext.cs" />
+    <Compile Include="Binding\Binder.cs" />
+    <Compile Include="Binding\BindListManager.cs" />
+    <Compile Include="Binding\BindManager.cs" />
+    <Compile Include="Binding\BindManagerBase.cs" />
+    <Compile Include="Binding\BindManagerRelated.cs" />
+    <Compile Include="Binding\BindPropertyManager.cs" />
+    <Compile Include="Binding\BindPropertyManagerRelated.cs" />
+    <Compile Include="Binding\BindToObject.cs" />
+    <Compile Include="Binding\CtlBind.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Binding\Events.cs" />
+    <Compile Include="Common\AsyncCommand.cs" />
+    <Compile Include="Common\DataBinding.cs" />
+    <Compile Include="Common\DropDownHandler.cs" />
+    <Compile Include="Controls\ColorPicker\ColorPopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\CtlColorButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColorPicker\CtlColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\CtlMultiPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\WindowList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Control\McUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlControlResize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlDockingManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlDockingManagerDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlDockingPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlDockingPanelDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlDockingTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlDockingTabDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlDockingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Docking\CtlFloatingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\LinkLabel\LinkLabelItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Memo\MemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Memo\MemoForm.Designer.cs">
+      <DependentUpon>MemoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Panels\McCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TaskPanel\TaskBarDesigner.cs" />
+    <Compile Include="Controls\TaskPanel\TaskPanelCollection.cs" />
+    <Compile Include="Controls\TaskPanel\TaskPanelDesigner.cs" />
+    <Compile Include="Controls\TaskPanel\TaskPanelProperty.cs" />
+    <Compile Include="Controls\TaskPanel\WithSlide\CtlTaskBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TaskPanel\WithSlide\CtlTaskPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBar\ToolBarContainerDesigner.cs" />
+    <Compile Include="Controls\ToolBar\ToolButtonCollectionEditor.cs" />
+    <Compile Include="Controls\ToolBar\McToolBarContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBar\ToolBarCollectionEditor.cs" />
+    <Compile Include="Controls\TreeView\CtlTreeCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeView\TreeViewPopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\LooKup\CtlColumnList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LooKup\CtlLookUp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LooKup\CtlLookUpList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LooKup\LookUpListDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\LooKup\LookupUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialog\EmailDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\EmailDlg.Designer.cs">
+      <DependentUpon>EmailDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\FilterDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\MsgDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\MsgDlg.Designer.cs">
+      <DependentUpon>MsgDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\NotifyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ProgressBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PropertyDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PropertyDlg.designer.cs">
+      <DependentUpon>PropertyDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\TextDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\WaitDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHelper.cs" />
+    <Compile Include="Forms\McForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\McCaptionForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\McCaptionFormDesigner.cs" />
+    <Compile Include="Forms\Structs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Providers\CtlToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\PopUpItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\CtlContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ResizeBar\CtlSpinner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Panels\FormBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Panels\FormBox.Designer.cs">
+      <DependentUpon>FormBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBox\Formatter.cs" />
+    <Compile Include="Design\CollectionDesigner.cs" />
+    <Compile Include="Design\CollectionEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\MultiSourcing.cs" />
+    <Compile Include="Design\PropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\McDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\McDataForm.Designer.cs">
+      <DependentUpon>McDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseCtl\CtlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlButtonCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlButtonEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlComboBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlEditBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlListItems.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlMaskedBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlPopUpBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlPopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlScrollable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlTextBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\CtlUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseCtl\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ControlEnums.cs" />
+    <Compile Include="Common\ControlUtils.cs" />
+    <Compile Include="Common\Delegates.cs" />
+    <Compile Include="Common\Explorer.cs" />
+    <Compile Include="Common\Global.cs" />
+    <Compile Include="Common\Handel.cs" />
+    <Compile Include="Common\Interfaces.cs" />
+    <Compile Include="Common\ResourceUtil.cs" />
+    <Compile Include="Controls\Buttons\CtlButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\CtlButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\CtlComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\CtlMultiBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\DateDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\ListDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\DatePicker\Calendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DatePicker\CtlDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DatePicker\CtlDateTimeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DatePicker\MonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBoxes\CtlCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBoxes\CtlGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBoxes\CtlRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Label\CtlLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LinkLabel\CtlLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\CtlCheckedList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\CtlListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListView\CtlListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeView\CtlTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Memo\CtlMemo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\CtlButtonMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\CtlContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\CtlMenuBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\CtlMenuProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Menus\CtlPopUp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\CtlNavBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\CtlNavBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\CtlNavChanges.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\CtlNavigatore.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigators\NavBarEvent.cs" />
+    <Compile Include="Controls\Panels\CtlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PictureBox\CtlPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressBar\CtlProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressBar\CtlProgressXP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ResizeBar\CtlMove.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ResizeBar\CtlResize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ResizeBar\ResizeBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrollBars\CtlHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrollBars\CtlScrollableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrollBars\CtlVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Shapes\CtlShapes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ResizeBar\SpinEdit\CtlSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Splitter\CtlSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\StatusBar\CtlStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\CtlTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\CtlTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl\TabControlDesigner.cs" />
+    <Compile Include="Controls\TabControl\TabPageCollection.cs" />
+    <Compile Include="Controls\TabControl\TabPageDesigner.cs" />
+    <Compile Include="Controls\TabControl\TabUtils.cs" />
+    <Compile Include="Controls\TextBox\CtlMaskedBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBox\CtlRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBox\CtlTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBox\DateBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBox\NumberBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBar\McToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBar\McToolButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolBar\ToolBarDesigner.cs" />
+    <Compile Include="Controls\ToolBar\Win32Methods.cs" />
+    <Compile Include="Design\Designers.cs" />
+    <Compile Include="Design\Editors.cs" />
+    <Compile Include="Design\IStyleLayout.cs" />
+    <Compile Include="Design\PainterDesigner.cs" />
+    <Compile Include="Design\StyleCtl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\StyleLayout.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Providers\CtlHelpLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Providers\CtlErrorProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Providers\CtlResource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Providers\CtlKeyAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\Designer\RegExPattern.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\Designer\RegExPatternCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\Designer\ValidatorEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\Designer\ValidatorProviderDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\Designer\ValidatorRuleConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\Designer\ValidatorRuleEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\ValidationEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\ValidatorProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ValidationProvider\ValidatorRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Data\DataSourceConvertor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Data\DataSourceUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Data\QueryBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseCtl\CtlBase.resx">
+      <DependentUpon>CtlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlButtonCombo.resx">
+      <DependentUpon>CtlButtonCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlButtonEdit.resx">
+      <DependentUpon>CtlButtonEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlComboBase.resx">
+      <DependentUpon>CtlComboBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlComponent.resx">
+      <DependentUpon>CtlComponent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlContainer.resx">
+      <DependentUpon>CtlContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlControl.resx">
+      <DependentUpon>CtlControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlEditBase.resx">
+      <DependentUpon>CtlEditBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlMaskedBase.resx">
+      <DependentUpon>CtlMaskedBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlPopUpBase.resx">
+      <DependentUpon>CtlPopUpBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlScrollable.resx">
+      <DependentUpon>CtlScrollable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlTextBoxBase.resx">
+      <DependentUpon>CtlTextBoxBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\CtlUpDown.resx">
+      <DependentUpon>CtlUpDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseCtl\ImageButton.resx">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ComboBoxes\CtlComboBox.resx">
+      <DependentUpon>CtlComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ComboBoxes\CtlMultiBox.resx">
+      <DependentUpon>CtlMultiBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DatePicker\CtlDatePicker.resx">
+      <DependentUpon>CtlDatePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DatePicker\CtlDateTimeLabel.resx">
+      <DependentUpon>CtlDateTimeLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DatePicker\MonthCalendar.resx">
+      <DependentUpon>MonthCalendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GroupBoxes\CtlCheckBox.resx">
+      <DependentUpon>CtlCheckBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GroupBoxes\CtlGroupBox.resx">
+      <DependentUpon>CtlGroupBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GroupBoxes\CtlRadioButton.resx">
+      <DependentUpon>CtlRadioButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Label\CtlLabel.resx">
+      <DependentUpon>CtlLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LinkLabel\CtlLinkLabel.resx">
+      <DependentUpon>CtlLinkLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListBox\CtlCheckedList.resx">
+      <DependentUpon>CtlCheckedList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListBox\CtlListBox.resx">
+      <DependentUpon>CtlListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListView\CtlListView.resx">
+      <DependentUpon>CtlListView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TreeView\CtlTreeView.resx">
+      <DependentUpon>CtlTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Menus\CtlButtonMenu.resx">
+      <DependentUpon>CtlButtonMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Menus\CtlPopUp.resx">
+      <DependentUpon>CtlPopUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Navigators\CtlNavBar.resx">
+      <DependentUpon>CtlNavBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Navigators\CtlNavBase.resx">
+      <DependentUpon>CtlNavBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Navigators\CtlNavChanges.resx">
+      <DependentUpon>CtlNavChanges.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Navigators\CtlNavigatore.resx">
+      <DependentUpon>CtlNavigatore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Panels\CtlPanel.resx">
+      <DependentUpon>CtlPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PictureBox\CtlPictureBox.resx">
+      <DependentUpon>CtlPictureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressBar\CtlProgressBar.resx">
+      <DependentUpon>CtlProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProgressBar\CtlProgressXP.resx">
+      <DependentUpon>CtlProgressXP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResizeBar\CtlMove.resx">
+      <DependentUpon>CtlMove.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResizeBar\CtlResize.resx">
+      <DependentUpon>CtlResize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResizeBar\ResizeBar.resx">
+      <DependentUpon>ResizeBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Shapes\CtlShapes.resx">
+      <DependentUpon>CtlShapes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResizeBar\SpinEdit\CtlSpinEdit.resx">
+      <DependentUpon>CtlSpinEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Splitter\CtlSplitter.resx">
+      <DependentUpon>CtlSplitter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StatusBar\CtlStatusBar.resx">
+      <DependentUpon>CtlStatusBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControl\CtlTabControl.resx">
+      <DependentUpon>CtlTabControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControl\CtlTabPage.resx">
+      <DependentUpon>CtlTabPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBox\CtlMaskedBox.resx">
+      <DependentUpon>CtlMaskedBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBox\CtlTextBox.resx">
+      <DependentUpon>CtlTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBox\DateBox.resx">
+      <DependentUpon>DateBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TextBox\NumberBox.resx">
+      <DependentUpon>NumberBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ToolBar\McToolButton.resx">
+      <DependentUpon>McToolButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\Designers.resx">
+      <DependentUpon>Designers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbox\KeyAction.bmp" />
+    <EmbeddedResource Include="Toolbox\Resource.bmp" />
+    <EmbeddedResource Include="Toolbox\Validator.bmp" />
+    <EmbeddedResource Include="Images\Accept.gif" />
+    <EmbeddedResource Include="Images\ArrowDown.gif" />
+    <EmbeddedResource Include="Images\ArrowUp.gif" />
+    <EmbeddedResource Include="Images\BtnAccept.gif" />
+    <EmbeddedResource Include="Images\BtnAddNew.gif" />
+    <EmbeddedResource Include="Images\btnBrows.gif" />
+    <EmbeddedResource Include="Images\btnCombo.gif" />
+    <EmbeddedResource Include="Images\BtnDelete.gif" />
+    <EmbeddedResource Include="Images\BtnDelete2.gif" />
+    <EmbeddedResource Include="Images\BtnFirstPage.gif" />
+    <EmbeddedResource Include="Images\BtnFirstPage2.gif" />
+    <EmbeddedResource Include="Images\BtnLastPage.gif" />
+    <EmbeddedResource Include="Images\BtnLastPage2.gif" />
+    <EmbeddedResource Include="Images\BtnNextPage.gif" />
+    <EmbeddedResource Include="Images\BtnNextPage2.gif" />
+    <EmbeddedResource Include="Images\BtnPrevPage.gif" />
+    <EmbeddedResource Include="Images\BtnPrevPage2.gif" />
+    <EmbeddedResource Include="Images\BtnPrint.gif" />
+    <EmbeddedResource Include="Images\BtnPrint2.gif" />
+    <EmbeddedResource Include="Images\BtnPrintPage.gif" />
+    <EmbeddedResource Include="Images\BtnPrintPage2.gif" />
+    <EmbeddedResource Include="Images\BtnReject.gif" />
+    <EmbeddedResource Include="Images\BtnSave.gif" />
+    <EmbeddedResource Include="Images\check.gif" />
+    <EmbeddedResource Include="Images\checked.gif" />
+    <EmbeddedResource Include="Images\checked1.gif" />
+    <EmbeddedResource Include="Images\checked2.gif" />
+    <EmbeddedResource Include="Images\clear.ico" />
+    <EmbeddedResource Include="Images\DownArrow.ico" />
+    <EmbeddedResource Include="Images\etc.ico" />
+    <EmbeddedResource Include="Toolbox\ButtonMenu.bmp" />
+    <EmbeddedResource Include="Toolbox\CheckedListBox.bmp" />
+    <EmbeddedResource Include="Toolbox\ColorPicker.bmp" />
+    <EmbeddedResource Include="Toolbox\ColumnList.bmp" />
+    <EmbeddedResource Include="Toolbox\ComboBox.bmp" />
+    <EmbeddedResource Include="Toolbox\DataGrid.bmp" />
+    <EmbeddedResource Include="Toolbox\DatePicker.bmp" />
+    <EmbeddedResource Include="Toolbox\DateTimeLabel.bmp" />
+    <EmbeddedResource Include="Toolbox\DialogControl.bmp" />
+    <EmbeddedResource Include="Toolbox\DockingManager.bmp" />
+    <EmbeddedResource Include="Toolbox\DropDown.bmp" />
+    <EmbeddedResource Include="Toolbox\EditBox.bmp" />
+    <EmbeddedResource Include="Toolbox\EditList.bmp" />
+    <EmbeddedResource Include="Toolbox\ErrorProvider.bmp" />
+    <EmbeddedResource Include="Toolbox\FloatBar.bmp" />
+    <EmbeddedResource Include="Toolbox\FontBox.bmp" />
+    <EmbeddedResource Include="Toolbox\GroupBox.bmp" />
+    <EmbeddedResource Include="Toolbox\HelpLabel.bmp" />
+    <EmbeddedResource Include="Toolbox\HScrollBar.bmp" />
+    <EmbeddedResource Include="Toolbox\ListView.bmp" />
+    <EmbeddedResource Include="Toolbox\ListViewGrid.bmp" />
+    <EmbeddedResource Include="Toolbox\Lookup_edit.bmp" />
+    <EmbeddedResource Include="Toolbox\Memo_edit.bmp" />
+    <EmbeddedResource Include="Toolbox\MenuBar.bmp" />
+    <EmbeddedResource Include="Toolbox\MenuDesigner.bmp" />
+    <EmbeddedResource Include="Toolbox\MultiBox.bmp" />
+    <EmbeddedResource Include="Toolbox\NavBar.bmp" />
+    <EmbeddedResource Include="Toolbox\Navigatore.bmp" />
+    <EmbeddedResource Include="Toolbox\Panel.bmp" />
+    <EmbeddedResource Include="Toolbox\PanelCaption.bmp" />
+    <EmbeddedResource Include="Toolbox\PictureBox.bmp" />
+    <EmbeddedResource Include="Toolbox\PopUpMenu.bmp" />
+    <EmbeddedResource Include="Toolbox\Preview.bmp" />
+    <EmbeddedResource Include="Toolbox\PreviewDlg.bmp" />
+    <EmbeddedResource Include="Toolbox\Print.bmp" />
+    <EmbeddedResource Include="Toolbox\PrintSetup.bmp" />
+    <EmbeddedResource Include="Toolbox\ProgressBar.bmp" />
+    <EmbeddedResource Include="Toolbox\ProgressXP.bmp" />
+    <EmbeddedResource Include="Toolbox\RichTextBox.bmp" />
+    <EmbeddedResource Include="Toolbox\ScrollableControl.bmp" />
+    <EmbeddedResource Include="Toolbox\Shapes.bmp" />
+    <EmbeddedResource Include="Toolbox\SpinEdit.bmp" />
+    <EmbeddedResource Include="Toolbox\Splitter.bmp" />
+    <EmbeddedResource Include="Toolbox\StatusBar.bmp" />
+    <EmbeddedResource Include="Toolbox\StyleGuide.bmp" />
+    <EmbeddedResource Include="Toolbox\TabControl.bmp" />
+    <EmbeddedResource Include="Toolbox\TaskPanel.bmp" />
+    <EmbeddedResource Include="Toolbox\TaskPanelBar.bmp" />
+    <EmbeddedResource Include="Toolbox\TextLogo.bmp" />
+    <EmbeddedResource Include="Toolbox\ToolBar.bmp" />
+    <EmbeddedResource Include="Toolbox\Tracker.bmp" />
+    <EmbeddedResource Include="Toolbox\TreeView.bmp" />
+    <EmbeddedResource Include="Toolbox\TreeCombo.bmp" />
+    <EmbeddedResource Include="Toolbox\VScrollBar.bmp" />
+    <EmbeddedResource Include="Images\copy.ico" />
+    <EmbeddedResource Include="Images\cut.ico" />
+    <EmbeddedResource Include="Images\Delete.gif" />
+    <EmbeddedResource Include="Images\Delete2.gif" />
+    <EmbeddedResource Include="Images\down.ico" />
+    <EmbeddedResource Include="Images\downSmallArrow.gif" />
+    <EmbeddedResource Include="Images\Edit.gif" />
+    <EmbeddedResource Include="Images\error.ico" />
+    <EmbeddedResource Include="Images\Exit.ico" />
+    <EmbeddedResource Include="Images\Filter.gif" />
+    <EmbeddedResource Include="Images\FilterRemove.gif" />
+    <EmbeddedResource Include="Images\ImagesCaptionIDE.bmp" />
+    <EmbeddedResource Include="Images\ImagesCaptionPlain.bmp" />
+    <EmbeddedResource Include="Images\ImagesMenuControl.bmp" />
+    <EmbeddedResource Include="Images\ImagesPopupMenu.bmp" />
+    <EmbeddedResource Include="Images\ImagesTabbedGroups.bmp" />
+    <EmbeddedResource Include="Images\loading.gif" />
+    <EmbeddedResource Include="Images\mCtl16.ico" />
+    <EmbeddedResource Include="Images\mCtl32.ico" />
+    <EmbeddedResource Include="Images\mCtlIcon32.bmp" />
+    <EmbeddedResource Include="Images\menuarrow.gif" />
+    <EmbeddedResource Include="Images\Moveto.gif" />
+    <EmbeddedResource Include="Images\movetoCtl.gif" />
+    <EmbeddedResource Include="Images\navDefault.gif" />
+    <EmbeddedResource Include="Images\navDelete.gif" />
+    <EmbeddedResource Include="Images\navEdit.gif" />
+    <EmbeddedResource Include="Images\navNew.gif" />
+    <EmbeddedResource Include="Images\navReadOnly.gif" />
+    <EmbeddedResource Include="Images\navUnBind.gif" />
+    <EmbeddedResource Include="Images\New.gif" />
+    <EmbeddedResource Include="Images\OK.ico" />
+    <EmbeddedResource Include="Images\paste.ico" />
+    <EmbeddedResource Include="Images\properties.ico" />
+    <EmbeddedResource Include="Images\Reject.gif" />
+    <EmbeddedResource Include="Images\SizeGrip.gif" />
+    <EmbeddedResource Include="Images\SortDown.ico" />
+    <EmbeddedResource Include="Images\SortUp.ico" />
+    <EmbeddedResource Include="Images\spinner.gif" />
+    <EmbeddedResource Include="Images\up.ico" />
+    <EmbeddedResource Include="Images\upSmallArrow.gif" />
+    <EmbeddedResource Include="Images\xpCollapse.gif" />
+    <EmbeddedResource Include="Images\xpExpand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Buttons\CtlButtonBase.resx">
+      <DependentUpon>CtlButtonBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Buttons\CtlButton.resx">
+      <DependentUpon>CtlButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Binding\CtlBind.resx">
+      <DependentUpon>CtlBind.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Menus\PopUpItem.resx">
+      <DependentUpon>PopUpItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResizeBar\CtlSpinner.resx">
+      <DependentUpon>CtlSpinner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Panels\FormBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\CollectionEditor.resx">
+      <DependentUpon>CollectionEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Providers\CtlResource.resx">
+      <DependentUpon>CtlResource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Providers\CtlKeyAction.resx">
+      <DependentUpon>CtlKeyAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\spinner1.gif" />
+    <EmbeddedResource Include="Images\collapsed.gif" />
+    <EmbeddedResource Include="Images\expaned.gif" />
+    <EmbeddedResource Include="Controls\ValidationProvider\Designer\ValidatorEditor.resx">
+      <DependentUpon>ValidatorEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ValidationProvider\ValidatorProvider.resx">
+      <DependentUpon>ValidatorProvider.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ImagesTabControl.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ComboBoxes\CtlMultiPicker.resx">
+      <DependentUpon>CtlMultiPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LinkLabel\LinkLabelItem.resx">
+      <DependentUpon>LinkLabelItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LooKup\CtlColumnList.resx">
+      <DependentUpon>CtlColumnList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LooKup\CtlLookUp.resx">
+      <DependentUpon>CtlLookUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LooKup\CtlLookUpList.resx">
+      <DependentUpon>CtlLookUpList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TaskPanel\TaskPanelProperty.resx">
+      <DependentUpon>TaskPanelProperty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\EmailDlg.resx">
+      <DependentUpon>EmailDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\FilterDlg.resx">
+      <DependentUpon>FilterDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\MsgDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MsgDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\NotifyWindow.resx">
+      <DependentUpon>NotifyWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ProgressBox.resx">
+      <DependentUpon>ProgressBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\PropertyDlg.resx">
+      <DependentUpon>PropertyDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\TextDialog.resx">
+      <DependentUpon>TextDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\WaitDlg.resx">
+      <DependentUpon>WaitDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\ImagesControlBox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Docking\AutoHideOff.bmp" />
+    <EmbeddedResource Include="Controls\Docking\AutoHideOn.bmp" />
+    <EmbeddedResource Include="Controls\Docking\Close.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbox\ToolTip.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbox\ContextMenu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\TaskPanel\WithSlide\CtlTaskBar.resx">
+      <DependentUpon>CtlTaskBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TaskPanel\WithSlide\CtlTaskPanel.resx">
+      <DependentUpon>CtlTaskPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\Perms.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbox\Button.bmp" />
+    <EmbeddedResource Include="Toolbox\MaskedBox.bmp" />
+    <EmbeddedResource Include="Toolbox\PropertyGrid.bmp" />
+    <EmbeddedResource Include="Toolbox\TextBox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbox\CheckBox.bmp" />
+    <EmbeddedResource Include="Toolbox\DropDownList.bmp" />
+    <EmbeddedResource Include="Toolbox\ImageButton.bmp" />
+    <EmbeddedResource Include="Toolbox\Label.bmp" />
+    <EmbeddedResource Include="Toolbox\LinkButton.bmp" />
+    <EmbeddedResource Include="Toolbox\ListBox.bmp" />
+    <EmbeddedResource Include="Toolbox\RadioButton.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Docking\CtlDockingTab.resx">
+      <DependentUpon>CtlDockingTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Panels\McCaption.resx">
+      <DependentUpon>McCaption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\McForm.resx">
+      <DependentUpon>McForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\LinkLabel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseCtl\CtlUserControl.resx">
+      <DependentUpon>CtlUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Control\McUserControl.resx">
+      <DependentUpon>McUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Memo\MemoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\ToolBarContainer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Binding\Old\" />
+    <Folder Include="Controls\ComboBoxes\src\" />
+    <Folder Include="Controls\ErrProvider\" />
+    <Folder Include="Controls\Menus\New\" />
+    <Folder Include="Controls\Panels\BCK\" />
+    <Folder Include="Controls\Providers\Toolbox\" />
+    <Folder Include="Controls\TaskPanel\NewFolder1\" />
+    <Folder Include="Controls\TextLogo\" />
+    <Folder Include="Controls\Tracker\" />
+    <Folder Include="Develop\" />
+    <Folder Include="Dialog\back\" />
+    <Folder Include="Forms\back\" />
+    <Folder Include="Printing\" />
+    <Folder Include="_Obsolete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MControl.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Printing\Printing\Printing.csproj">
+      <Project>{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}</Project>
+      <Name>Printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win\Win\Win.csproj">
+      <Project>{1E47FD52-925B-4F29-BDDE-A4233BE7B8A9}</Project>
+      <Name>Win</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

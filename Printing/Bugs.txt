@@ -1,0 +1,6 @@
+[FEATURE]
+Print previw dialod mcontrol icon
+
+
+[BUGS]
+#1 contex menu separators

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptBuilder", "ScriptBuilder\ScriptBuilder.csproj", "{8224D8E7-CE07-4755-945F-D5497882C9D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllSample", "ScriptApplication\DllSample\DllSample.csproj", "{E3E92699-8CCD-47D0-8B3E-DB2587C15F5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptAppTester", "ScriptApplication\ScriptAppTester\ScriptAppTester.csproj", "{15A09E41-1CAB-4CCF-B3D8-D8A09D276FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptClientTester", "ScriptApplication\ScriptClientTester\ScriptClientTester.csproj", "{DB1A8C23-0D92-43CD-9A9B-298CE3316169}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8224D8E7-CE07-4755-945F-D5497882C9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8224D8E7-CE07-4755-945F-D5497882C9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8224D8E7-CE07-4755-945F-D5497882C9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8224D8E7-CE07-4755-945F-D5497882C9D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E92699-8CCD-47D0-8B3E-DB2587C15F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E92699-8CCD-47D0-8B3E-DB2587C15F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E92699-8CCD-47D0-8B3E-DB2587C15F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E92699-8CCD-47D0-8B3E-DB2587C15F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A09E41-1CAB-4CCF-B3D8-D8A09D276FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A09E41-1CAB-4CCF-B3D8-D8A09D276FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A09E41-1CAB-4CCF-B3D8-D8A09D276FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A09E41-1CAB-4CCF-B3D8-D8A09D276FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1A8C23-0D92-43CD-9A9B-298CE3316169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1A8C23-0D92-43CD-9A9B-298CE3316169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1A8C23-0D92-43CD-9A9B-298CE3316169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1A8C23-0D92-43CD-9A9B-298CE3316169}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

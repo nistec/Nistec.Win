@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Printing", "Printing\Printing.csproj", "{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintingDemo", "PrintingDemo\PrintingDemo.csproj", "{973C23FD-A92B-467E-9208-B8DA350E899B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973C23FD-A92B-467E-9208-B8DA350E899B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973C23FD-A92B-467E-9208-B8DA350E899B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973C23FD-A92B-467E-9208-B8DA350E899B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973C23FD-A92B-467E-9208-B8DA350E899B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+<Combine fileversion="1.0" name="mControl.SyntaxEditor" description="">
+  <StartMode startupentry="mControl.SyntaxEditor" single="True">
+    <Execute entry="mControl.SyntaxEditor" type="None" />
+  </StartMode>
+  <Entries>
+    <Entry filename=".\mControl.SyntaxEditor.prjx" />
+  </Entries>
+  <Configurations active="Debug">
+    <Configuration name="Release">
+      <Entry name="mControl.SyntaxEditor" configurationname="Debug" build="False" />
+    </Configuration>
+    <Configuration name="Debug">
+      <Entry name="mControl.SyntaxEditor" configurationname="Debug" build="False" />
+    </Configuration>
+  </Configurations>
+</Combine>

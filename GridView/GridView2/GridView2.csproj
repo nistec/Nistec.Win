@@ -1,0 +1,222 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D544986-4853-4B97-8BD9-501AD585E454}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GridView2</RootNamespace>
+    <AssemblyName>GridView2</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ButtonAdapter\ButtonBaseAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\ButtonFlatAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\ButtonPopupAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\ButtonStandardAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\CheckableControlBaseAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\CheckBoxBaseAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\CheckBoxFlatAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\CheckBoxPopupAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\CheckBoxStandardAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\RadioButtonBaseAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\RadioButtonFlatAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\RadioButtonPopupAdapter.cs" />
+    <Compile Include="Controls\ButtonAdapter\RadioButtonStandardAdapter.cs" />
+    <Compile Include="GridView\DataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\DataGridViewAdvancedBorderStyle.cs" />
+    <Compile Include="GridItems\DataGridViewAdvancedCellBorderStyle.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeColumnCriteriaInternal.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeColumnMode.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeColumnModeEventArgs.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeColumnModeEventHandler.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeColumnsMode.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeColumnsModeEventArgs.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeColumnsModeEventHandler.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeModeEventArgs.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeModeEventHandler.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeRowCriteriaInternal.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeRowMode.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeRowsMode.cs" />
+    <Compile Include="GridItems\DataGridViewAutoSizeRowsModeInternal.cs" />
+    <Compile Include="GridItems\DataGridViewBand.cs" />
+    <Compile Include="GridItems\DataGridViewBindingCompleteEventArgs.cs" />
+    <Compile Include="GridItems\DataGridViewBindingCompleteEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewButtonCell.cs" />
+    <Compile Include="GridColumn\DataGridViewButtonColumn.cs" />
+    <Compile Include="GridCell\DataGridViewCell.cs" />
+    <Compile Include="GridCell\DataGridViewCellBorderStyle.cs" />
+    <Compile Include="GridCell\DataGridViewCellCancelEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellCancelEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellCollection.cs" />
+    <Compile Include="GridCell\DataGridViewCellContextMenuStripNeededEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellContextMenuStripNeededEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellConverter.cs" />
+    <Compile Include="GridCell\DataGridViewCellErrorTextNeededEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellErrorTextNeededEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellFormattingEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellFormattingEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellLinkedList.cs" />
+    <Compile Include="GridCell\DataGridViewCellLinkedListElement.cs" />
+    <Compile Include="GridCell\DataGridViewCellLinkedListEnumerator.cs" />
+    <Compile Include="GridCell\DataGridViewCellMouseEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellMouseEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellPaintingEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellPaintingEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellParsingEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellParsingEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellStateChangedEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellStateChangedEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellStyle.cs" />
+    <Compile Include="GridCell\DataGridViewCellStyleChangedEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellStyleContentChangedEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellStyleContentChangedEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellStyleConverter.cs" />
+    <Compile Include="GridCell\DataGridViewCellStyleDifferences.cs" />
+    <Compile Include="GridCell\DataGridViewCellStyleScopes.cs" />
+    <Compile Include="GridCell\DataGridViewCellToolTipTextNeededEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellToolTipTextNeededEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellValidatingEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellValidatingEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCellValueEventArgs.cs" />
+    <Compile Include="GridCell\DataGridViewCellValueEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewCheckBoxCell.cs" />
+    <Compile Include="GridColumn\DataGridViewCheckBoxColumn.cs" />
+    <Compile Include="GridColumn\DataGridViewClipboardCopyMode.cs" />
+    <Compile Include="GridColumn\DataGridViewColumn.cs" />
+    <Compile Include="Collection\DataGridViewColumnCollection.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnConverter.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnDesignTimeVisibleAttribute.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnDividerDoubleClickEventArgs.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnDividerDoubleClickEventHandler.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnEventArgs.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnEventHandler.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnHeaderCell.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnHeadersHeightSizeMode.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnSortMode.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnStateChangedEventArgs.cs" />
+    <Compile Include="GridColumn\DataGridViewColumnStateChangedEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewComboBoxCell.cs" />
+    <Compile Include="GridColumn\DataGridViewComboBoxColumn.cs" />
+    <Compile Include="GridItems\DataGridViewComboBoxDisplayStyle.cs" />
+    <Compile Include="GridItems\DataGridViewComboBoxEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\DataGridViewContentAlignment.cs" />
+    <Compile Include="GridItems\DataGridViewDataErrorContexts.cs" />
+    <Compile Include="GridItems\DataGridViewDataErrorEventArgs.cs" />
+    <Compile Include="GridItems\DataGridViewDataErrorEventHandler.cs" />
+    <Compile Include="GridItems\DataGridViewEditingControlShowingEventArgs.cs" />
+    <Compile Include="GridItems\DataGridViewEditingControlShowingEventHandler.cs" />
+    <Compile Include="GridItems\DataGridViewEditMode.cs" />
+    <Compile Include="GridItems\DataGridViewElement.cs" />
+    <Compile Include="GridItems\DataGridViewElementStates.cs" />
+    <Compile Include="GridItems\DataGridViewFreeDimension.cs" />
+    <Compile Include="GridItems\DataGridViewHeaderBorderStyle.cs" />
+    <Compile Include="GridItems\DataGridViewHeaderCell.cs" />
+    <Compile Include="GridItems\DataGridViewHitTestType.cs" />
+    <Compile Include="GridItems\DataGridViewHitTestTypeCloseEdge.cs" />
+    <Compile Include="GridCell\DataGridViewImageCell.cs" />
+    <Compile Include="GridCell\DataGridViewImageCellLayout.cs" />
+    <Compile Include="GridColumn\DataGridViewImageColumn.cs" />
+    <Compile Include="GridItems\DataGridViewIntLinkedList.cs" />
+    <Compile Include="GridItems\DataGridViewIntLinkedListElement.cs" />
+    <Compile Include="GridItems\DataGridViewIntLinkedListEnumerator.cs" />
+    <Compile Include="GridCell\DataGridViewLinkCell.cs" />
+    <Compile Include="GridColumn\DataGridViewLinkColumn.cs" />
+    <Compile Include="GridItems\DataGridViewPaintParts.cs" />
+    <Compile Include="GridRow\DataGridViewRow.cs" />
+    <Compile Include="GridRow\DataGridViewRowCancelEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowCancelEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowCollection.cs" />
+    <Compile Include="GridRow\DataGridViewRowContextMenuStripNeededEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowContextMenuStripNeededEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowConverter.cs" />
+    <Compile Include="GridRow\DataGridViewRowDividerDoubleClickEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowDividerDoubleClickEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowErrorTextNeededEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowErrorTextNeededEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowHeaderCell.cs" />
+    <Compile Include="GridRow\DataGridViewRowHeadersWidthSizeMode.cs" />
+    <Compile Include="GridRow\DataGridViewRowHeightInfoNeededEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowHeightInfoNeededEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowHeightInfoPushedEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowHeightInfoPushedEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowPostPaintEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowPostPaintEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowPrePaintEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowPrePaintEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowsAddedEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowsAddedEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowsRemovedEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowsRemovedEventHandler.cs" />
+    <Compile Include="GridRow\DataGridViewRowStateChangedEventArgs.cs" />
+    <Compile Include="GridRow\DataGridViewRowStateChangedEventHandler.cs" />
+    <Compile Include="Collection\DataGridViewSelectedCellCollection.cs" />
+    <Compile Include="Collection\DataGridViewSelectedColumnCollection.cs" />
+    <Compile Include="Collection\DataGridViewSelectedRowCollection.cs" />
+    <Compile Include="GridItems\DataGridViewSelectionMode.cs" />
+    <Compile Include="GridItems\DataGridViewSortCompareEventArgs.cs" />
+    <Compile Include="GridItems\DataGridViewSortCompareEventHandler.cs" />
+    <Compile Include="GridCell\DataGridViewTextBoxCell.cs" />
+    <Compile Include="GridColumn\DataGridViewTextBoxColumn.cs" />
+    <Compile Include="GridItems\DataGridViewTextBoxEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\DataGridViewTopLeftHeaderCell.cs" />
+    <Compile Include="GridItems\DataGridViewTriState.cs" />
+    <Compile Include="GridItems\DataGridViewUtilities.cs" />
+    <Compile Include="IDataGridViewEditingCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDataGridViewEditingControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyStore.cs" />
+    <Compile Include="SR.cs" />
+    <Compile Include="WinMethods.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

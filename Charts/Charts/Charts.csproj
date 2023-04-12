@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0759DA6-4E9C-4D9B-BD53-2EB38979425D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nistec.Charts</RootNamespace>
+    <AssemblyName>Nistec.Charts</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/MControl.Charts/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\References\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\References\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nistec.Data, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Nistec.Lib, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Designer\Designer.cs" />
+    <Compile Include="GraphControl\BackgroundStripe.cs" />
+    <Compile Include="GraphControl\BitmapWriter.cs" />
+    <Compile Include="GraphControl\Chart.cs" />
+    <Compile Include="GraphControl\ChartException.cs" />
+    <Compile Include="GraphControl\ChartItems\ChartLabel.cs" />
+    <Compile Include="GraphControl\ChartItems\ColorItem.cs" />
+    <Compile Include="GraphControl\ChartItems\DataFieldsItem.cs" />
+    <Compile Include="GraphControl\ChartItems\DataItem.cs" />
+    <Compile Include="GraphControl\ChartItems\DataItemConverter.cs" />
+    <Compile Include="GraphControl\ChartItems\ImageItem.cs" />
+    <Compile Include="GraphControl\ChartItems\KeyItem.cs" />
+    <Compile Include="GraphControl\ChartItems\Collections.cs" />
+    <Compile Include="GraphControl\Enums.cs" />
+    <Compile Include="GraphControl\ExtractTable.cs" />
+    <Compile Include="GraphControl\GraphHelper.cs">
+    </Compile>
+    <Compile Include="GraphControl\HotSpot\ChartStateBag.cs" />
+    <Compile Include="GraphControl\HotSpot\ImageMap.cs" />
+    <Compile Include="GraphControl\HotSpot\ImageMapEventArgs.cs" />
+    <Compile Include="GraphControl\HotSpot\ImageMapEventHandler.cs" />
+    <Compile Include="GraphControl\HotSpot\StateItem.cs" />
+    <Compile Include="GraphControl\Prompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphControl\Statistics\ArithmeticAverage.cs" />
+    <Compile Include="GraphControl\Statistics\FixDecimal.cs" />
+    <Compile Include="GraphControl\Statistics\GeometricAverage.cs" />
+    <Compile Include="GraphControl\Statistics\HarmonicAverage.cs" />
+    <Compile Include="GraphControl\Statistics\Mat.cs" />
+    <Compile Include="GraphControl\Statistics\Median.cs" />
+    <Compile Include="GraphControl\Statistics\Mode.cs" />
+    <Compile Include="GraphControl\Statistics\Punct.cs" />
+    <Compile Include="GraphControl\Statistics\RandomData.cs" />
+    <Compile Include="GraphControl\Statistics\Recursion.cs" />
+    <Compile Include="GraphControl\Statistics\RecursiveExponential.cs" />
+    <Compile Include="GraphControl\Statistics\RecursiveHyperbolic.cs" />
+    <Compile Include="GraphControl\Statistics\RecursiveLinear.cs" />
+    <Compile Include="GraphControl\Statistics\RecursiveLogarithmic.cs" />
+    <Compile Include="GraphControl\Statistics\RecursiveParabolic.cs" />
+    <Compile Include="GraphControl\Statistics\RecursivePolynomic.cs" />
+    <Compile Include="GraphControl\Statistics\RecursivePowerCurve.cs" />
+    <Compile Include="GraphControl\Statistics\RunningAverage.cs" />
+    <Compile Include="GraphControl\Statistics\Statistic.cs" />
+    <Compile Include="GraphControl\Web\ActionList.cs" />
+    <Compile Include="GraphControl\Web\Animation\AnimationMode.cs" />
+    <Compile Include="GraphControl\Web\Animation\AnimationOrder.cs" />
+    <Compile Include="GraphControl\Web\Animation\AnimationSoft.cs" />
+    <Compile Include="GraphControl\Web\Animation\AnimationType.cs" />
+    <Compile Include="GraphControl\Web\Animation\ChartFlash.cs" />
+    <Compile Include="GraphControl\Web\ChartDesigner.cs" />
+    <Compile Include="GraphControl\Web\GraphSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphControl\HotSpot\PolygonHotSpot.cs" />
+    <Compile Include="GraphControl\HotSpot\StateManagedCollection.cs" />
+    <Compile Include="GraphControl\Web\McGraph.cs" />
+    <Compile Include="GraphControl\Web\McXmlEditor.cs" />
+    <Compile Include="GraphControl\HotSpot\CircleHotSpot.cs" />
+    <Compile Include="GraphControl\HotSpot\HotSpot.cs" />
+    <Compile Include="GraphControl\HotSpot\HotSpotCollection.cs" />
+    <Compile Include="GraphControl\HotSpot\HotSpotMode.cs" />
+    <Compile Include="GraphControl\HotSpot\RectangleHotSpot.cs" />
+    <Compile Include="GraphControl\Web\Phase.cs" />
+    <Compile Include="GraphControl\Web\ScaleBreaks.cs" />
+    <Compile Include="GraphControl\Web\XmlChart.cs" />
+    <Compile Include="GraphControl\Web\XmlEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphControl\Win\GraphSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphControl\Win\McGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GraphControl\Win\WinActionList.cs" />
+    <Compile Include="GraphControl\Win\WinChartDesigner.cs" />
+    <Compile Include="Led\McLed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Meter\McMeter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Meter\LinearColors.cs" />
+    <Compile Include="Meter\LinearColorsTypeConverter.cs" />
+    <Compile Include="PieCharts\PieChartUtil.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Usage\McUsage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Usage\McUsageHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PieCharts\McPieChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieCharts\DrawingMetrics.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieCharts\Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieCharts\ItemCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieCharts\ItemCollectionEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieCharts\PieChartItemStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieCharts\PieChartStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PieCharts\PieChartItem.cs" />
+    <Compile Include="PieCharts\ItemConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Meter\McMeter.resx">
+      <DependentUpon>McMeter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GraphControl\Prompt.resx">
+      <DependentUpon>Prompt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphControl\Web\GraphSettings.resx">
+      <DependentUpon>GraphSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphControl\Web\XmlEditorForm.resx">
+      <DependentUpon>XmlEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphControl\Win\GraphSettings.resx">
+      <DependentUpon>GraphSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphControl\Win\McGraph.resx">
+      <DependentUpon>McGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Images\piechart16.bmp" />
+    <Content Include="Images\piechart256.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\barShadow.png" />
+    <EmbeddedResource Include="Resources\ChartFlush.swf" />
+    <EmbeddedResource Include="Images\Graph.bmp" />
+    <EmbeddedResource Include="Resources\light.PNG" />
+    <EmbeddedResource Include="Resources\light0.png" />
+    <EmbeddedResource Include="Resources\light1.png" />
+    <EmbeddedResource Include="Resources\light10.png" />
+    <EmbeddedResource Include="Resources\light11.png" />
+    <EmbeddedResource Include="Resources\light2.png" />
+    <EmbeddedResource Include="Resources\light3.png" />
+    <EmbeddedResource Include="Resources\light4.png" />
+    <EmbeddedResource Include="Resources\light5.png" />
+    <EmbeddedResource Include="Resources\light6.png" />
+    <EmbeddedResource Include="Resources\light7.png" />
+    <EmbeddedResource Include="Resources\light8.png" />
+    <EmbeddedResource Include="Resources\light9.png" />
+    <EmbeddedResource Include="Resources\pieLight0.png" />
+    <EmbeddedResource Include="Resources\pieLight1.png" />
+    <EmbeddedResource Include="Resources\pieLight2.png" />
+    <EmbeddedResource Include="Resources\pieLight3.png" />
+    <EmbeddedResource Include="Resources\pieLight4.png" />
+    <EmbeddedResource Include="Resources\pieLight5.png" />
+    <EmbeddedResource Include="Resources\pieLight6.png" />
+    <EmbeddedResource Include="Resources\pieShadow.png" />
+    <EmbeddedResource Include="Images\Usage.bmp" />
+    <EmbeddedResource Include="Images\UsageHistory.bmp" />
+    <EmbeddedResource Include="Images\Led.bmp" />
+    <EmbeddedResource Include="Images\Meter.bmp" />
+    <EmbeddedResource Include="Usage\McUsage.resx">
+      <DependentUpon>McUsage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usage\McUsageHistory.resx">
+      <DependentUpon>McUsageHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\PieChart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GraphControl\Collections\" />
+    <Folder Include="GraphControl\source\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MControl.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Win_4.0.2.1\Printing\Printing\Printing.csproj">
+      <Project>{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}</Project>
+      <Name>Printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Win_4.0.2.1\Win\Win\Win.csproj">
+      <Project>{1E47FD52-925B-4F29-BDDE-A4233BE7B8A9}</Project>
+      <Name>Win</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

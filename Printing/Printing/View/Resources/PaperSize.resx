@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsdataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="10x14">
+		<value>10;14;in</value>
+	</data>
+	<data name="11x17">
+		<value>11;17;in</value>
+	</data>
+	<data name="A3">
+		<value>29.7;42;cm</value>
+	</data>
+	<data name="A4">
+		<value>21;29.7;cm</value>
+	</data>
+	<data name="A4Small">
+		<value>21;29.7;cm</value>
+	</data>
+	<data name="A5">
+		<value>14.8;21;cm</value>
+	</data>
+	<data name="B4">
+		<value>25;35.4;cm</value>
+	</data>
+	<data name="B5">
+		<value>18.2;25.7;cm</value>
+	</data>
+	<data name="Csheet">
+		<value>17;22;in</value>
+	</data>
+	<data name="Dsheet">
+		<value>22;34;in</value>
+	</data>
+	<data name="Envelope10">
+		<value>4.125;9.5;in</value>
+	</data>
+	<data name="Envelope11">
+		<value>4.5;10.375;in</value>
+	</data>
+	<data name="Envelope12">
+		<value>4.75;11;in</value>
+	</data>
+	<data name="Envelope14">
+		<value>5;11.5;in</value>
+	</data>
+	<data name="Envelope9">
+		<value>3.875;8.875;in</value>
+	</data>
+	<data name="EnvelopeB4">
+		<value>25;35.3;cm</value>
+	</data>
+	<data name="EnvelopeB5">
+		<value>17.6;25;cm</value>
+	</data>
+	<data name="EnvelopeB6">
+		<value>17.6;12.5;cm</value>
+	</data>
+	<data name="EnvelopeC3">
+		<value>32.4;45.8;cm</value>
+	</data>
+	<data name="EnvelopeC4">
+		<value>22.9;32.4;cm</value>
+	</data>
+	<data name="EnvelopeC5">
+		<value>16.2;22.9;cm</value>
+	</data>
+	<data name="EnvelopeC6">
+		<value>11.4;16.2;cm</value>
+	</data>
+	<data name="EnvelopeC65">
+		<value>11.4;22.9;cm</value>
+	</data>
+	<data name="EnvelopeDL">
+		<value>11;22;cm</value>
+	</data>
+	<data name="EnvelopeItaly">
+		<value>11;23;cm</value>
+	</data>
+	<data name="EnvelopeMonarch">
+		<value>3.875;7.5;in</value>
+	</data>
+	<data name="EnvelopePersonal">
+		<value>3.625;6.5;in</value>
+	</data>
+	<data name="Esheet">
+		<value>34;44;in</value>
+	</data>
+	<data name="Executive">
+		<value>7.25;10.5;in</value>
+	</data>
+	<data name="FanfoldLegalGerman">
+		<value>8.5;13;in</value>
+	</data>
+	<data name="FanfoldStdGerman">
+		<value>8.5;12;in</value>
+	</data>
+	<data name="FanfoldUS">
+		<value>14.875;11;in</value>
+	</data>
+	<data name="Folio">
+		<value>8.5;13;in</value>
+	</data>
+	<data name="Ledger">
+		<value>17;11;in</value>
+	</data>
+	<data name="Legal">
+		<value>8.5;14;in</value>
+	</data>
+	<data name="Letter">
+		<value>8.5;11;in</value>
+	</data>
+	<data name="LetterSmall">
+		<value>8.5;11;in</value>
+	</data>
+	<data name="Note">
+		<value>8.5;11;in</value>
+	</data>
+	<data name="Quarto">
+		<value>21.5;27.5;cm</value>
+	</data>
+	<data name="Statement">
+		<value>5.5;8.5;in</value>
+	</data>
+	<data name="Tabloid">
+		<value>11;17;in</value>
+	</data>
+</root>

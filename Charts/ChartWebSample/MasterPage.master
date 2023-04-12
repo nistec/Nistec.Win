@@ -1,0 +1,75 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+    <title>MControl Charts.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="Content-Language" content="english">
+    <meta content="index,follow" name="robots">
+    <meta content="MControl Charts." name="Keywords">
+    <meta content="MControl Charts." name="Description"> 
+    <link href="./images/styles.css" type="text/css" rel="stylesheet">
+    <meta content="MSHTML 6.00.2900.2963" name="GENERATOR">
+</head>
+<body>
+
+   <!-- Header -->
+    <div class="center">
+        <table class="head" border="0" style="height: 80px">
+            <tbody>
+                <tr>
+                    <td style="width:10px">&nbsp;</td>
+                    <td style="width:90px"><img src="images/logo.png" width="80" height="50"/></td>
+                    <td valign="bottom" height="60" align="left" style="width:85%">
+                        <h1>
+                            &nbsp;MControl Charts Samples</h1></td>
+                    <td class="langoff" valign="top" align="right">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td background="images/bh.png" bgcolor="#9999ff" colspan="4" style="height: 21px">
+                        <table class="headmenu">
+                            <tbody>
+                                <tr>
+                                    <td style="height: 21px">
+                                        <a class="headmenu" href="index.aspx">Home</a></td>
+                                    <td style="height: 21px">
+                                        <img src="images/bh-sep.png" width="1"></td>
+                                    <td style="height: 21px">
+                                        <a class="headmenu" href="http://www.mcontrolnet.com">Order</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-left: 10px; margin-right: 10px">
+            <br />
+            <table border="0" width="100%">
+                <tr>
+                    <td valign="top" align="center">
+                        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Footer -->
+        <table class="footer">
+            <tbody>
+                <tr>
+                    <td class="lightbluetext">
+                        Copyright by <a class="lightbluetext" href="http://www.mcontrolnet.com/"
+                            target="_blank">MControl.Net</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+

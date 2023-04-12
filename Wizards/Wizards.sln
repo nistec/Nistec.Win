@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizardsTest", "WinUITest\WizardsTest.csproj", "{3D57661A-CF58-4070-816D-28781ADC8596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizards", "Wizards\Wizards.csproj", "{632429A7-64BD-4AEB-AF2A-65F3315F7422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D57661A-CF58-4070-816D-28781ADC8596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D57661A-CF58-4070-816D-28781ADC8596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D57661A-CF58-4070-816D-28781ADC8596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D57661A-CF58-4070-816D-28781ADC8596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{632429A7-64BD-4AEB-AF2A-65F3315F7422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{632429A7-64BD-4AEB-AF2A-65F3315F7422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{632429A7-64BD-4AEB-AF2A-65F3315F7422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{632429A7-64BD-4AEB-AF2A-65F3315F7422}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

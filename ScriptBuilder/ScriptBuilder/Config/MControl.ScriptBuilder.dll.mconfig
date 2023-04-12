@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<appSettings>
+
+
+	<Add key="System." value="System.dll">
+	</Add>
+	<Add key="System.Data" value="System.Data.dll">
+	</Add>
+	<Add key="System.Drawing" value="System.Drawing.dll">
+	</Add>
+	<Add key="System.Windows.Forms" value="System.Windows.Forms.dll">
+	</Add>
+	<Add key="System.Xml" value="System.Xml.dll">
+	</Add>
+	<Add key="System.Web" value="System.Web.dll">
+	</Add>
+	<Add key="System.Text" value="System.Text.dll">
+	</Add>
+
+	<Add key="Nistec.Net.dll" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\Debug\Nistec.Net.dll">
+	</Add>
+	<Add key="Nistec.Data.dll" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\Debug\Nistec.Data.dll">
+	</Add>
+	<Add key="Nistec.License.dll" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\Debug\Nistec.License.dll">
+	</Add>
+	<Add key="Netcell.Data.dll" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\Debug\Netcell.Data.dll">
+	</Add>
+	<Add key="Netcell.Messaging.dll" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\Debug\Netcell.Messaging.dll">
+	</Add>
+	<Add key="Netcell.AppManager.dll" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\Debug\Netcell.AppManager.dll">
+	</Add>
+
+	<Add key="ScriptLibrary" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\ScriptLibrary\" type="System.String">
+	</Add>
+
+	<Add key="AppScriptPath" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\ScriptLibrary\" type="System.String">
+	</Add>
+
+	<Add key="AppDllPath" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\ScriptLibrary\" type="System.String">
+	</Add>
+
+	<Add key="AppTempPath" value="D:\Nistec\Bin_3.5.0\NetCell_3.5\References\ScriptLibrary\Temp\" type="System.String">
+	</Add>
+
+	<Add key="MainMethod" value="Execute" type="System.String">
+	</Add>
+
+	<Add key="ClassName" value="AppScript" type="System.String">
+	</Add>
+
+
+	<Add key="appName" value="ScriptEngine" type="System.String">
+	</Add>
+	<Add key="appParams" value="[/nl]:" type="System.String">
+	</Add>
+	<Add key="appParamsHelp" value="nl	-	No logo mode: No banner will be shown at execution time.\n" type="System.String">
+	</Add>
+	<Add key="appConsole" value="False" type="System.Boolean">
+	</Add>
+
+
+</appSettings>
+

@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADAF02EE-ADC9-4AAB-840E-44D9DF939706}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nistec.SyntaxEditor</RootNamespace>
+    <AssemblyName>Nistec.SyntaxEditor</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/MControl.SyntaxEditor/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\References\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\References\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nistec.Data, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Nistec.Lib, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\BookmarkActions.cs" />
+    <Compile Include="Actions\CaretActions.cs" />
+    <Compile Include="Actions\ClipBoardActions.cs" />
+    <Compile Include="Actions\FoldActions.cs" />
+    <Compile Include="Actions\FormatActions.cs" />
+    <Compile Include="Actions\HomeEndActions.cs" />
+    <Compile Include="Actions\IEditAction.cs" />
+    <Compile Include="Actions\MiscActions.cs" />
+    <Compile Include="Actions\SelectionActions.cs" />
+    <Compile Include="Dialog\BaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\GotoLineDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PrintDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\SearchDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\SnippetsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Document\AbstractSegment.cs" />
+    <Compile Include="Document\BookmarkManager\BookmarkManager.cs" />
+    <Compile Include="Document\BookmarkManager\BookmarkManagerMemento.cs" />
+    <Compile Include="Document\BookmarkManager\IBookMarkManager.cs" />
+    <Compile Include="Document\DefaultDocument.cs" />
+    <Compile Include="Document\DefaultTextEditorProperties.cs" />
+    <Compile Include="Document\DocumentEventArgs.cs" />
+    <Compile Include="Document\DocumentFactory.cs" />
+    <Compile Include="Document\FoldingStrategy\FoldingManager.cs" />
+    <Compile Include="Document\FoldingStrategy\FoldMarker.cs" />
+    <Compile Include="Document\FoldingStrategy\IFoldingStrategy.cs" />
+    <Compile Include="Document\FoldingStrategy\IndentFoldingStrategy.cs" />
+    <Compile Include="Document\FoldingStrategy\ParserFoldingStrategy.cs" />
+    <Compile Include="Document\FormattingStrategy\DefaultFormattingStrategy.cs" />
+    <Compile Include="Document\FormattingStrategy\IFormattingStrategy.cs" />
+    <Compile Include="Document\HighlightingStrategy\DefaultHighlightingStrategy.cs" />
+    <Compile Include="Document\HighlightingStrategy\FontContainer.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightBackground.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightColor.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightInfo.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightingColorNotFoundException.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightingDefinitionParser.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightingManager.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightingStrategyFactory.cs" />
+    <Compile Include="Document\HighlightingStrategy\HighlightRuleSet.cs" />
+    <Compile Include="Document\HighlightingStrategy\IHighlightingStrategy.cs" />
+    <Compile Include="Document\HighlightingStrategy\NextMarker.cs" />
+    <Compile Include="Document\HighlightingStrategy\PrevMarker.cs" />
+    <Compile Include="Document\HighlightingStrategy\Span.cs" />
+    <Compile Include="Document\HighlightingStrategy\SyntaxModes\FileSyntaxModeProvider.cs" />
+    <Compile Include="Document\HighlightingStrategy\SyntaxModes\ISyntaxModeFileProvider.cs" />
+    <Compile Include="Document\HighlightingStrategy\SyntaxModes\ResourceSyntaxModeProvider.cs" />
+    <Compile Include="Document\HighlightingStrategy\SyntaxModes\SyntaxMode.cs" />
+    <Compile Include="Document\HighlightingStrategy\TextWord.cs" />
+    <Compile Include="Document\IDocument.cs" />
+    <Compile Include="Document\ISegment.cs" />
+    <Compile Include="Document\ITextEditorProperties.cs" />
+    <Compile Include="Document\LineManager\DefaultLineManager.cs" />
+    <Compile Include="Document\LineManager\ILineManager.cs" />
+    <Compile Include="Document\LineManager\LineManagerEventArgs.cs" />
+    <Compile Include="Document\LineManager\LineSegment.cs" />
+    <Compile Include="Document\MarkerStrategy\MarkerStrategy.cs" />
+    <Compile Include="Document\MarkerStrategy\TextMarker.cs" />
+    <Compile Include="Document\Selection\ColumnRange.cs" />
+    <Compile Include="Document\Selection\DefaultSelection.cs" />
+    <Compile Include="Document\Selection\ISelection.cs" />
+    <Compile Include="Document\Selection\SelectionCollection.cs" />
+    <Compile Include="Document\Selection\SelectionManager.cs" />
+    <Compile Include="Document\TextBufferStrategy\GapTextBufferStrategy.cs" />
+    <Compile Include="Document\TextBufferStrategy\ITextBufferStrategy.cs" />
+    <Compile Include="Document\TextBufferStrategy\StringTextBufferStrategy.cs" />
+    <Compile Include="Document\TextUtilities.cs" />
+    <Compile Include="Editors\IntelliWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\Delegates.cs" />
+    <Compile Include="Editors\TextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editors\WORD.cs" />
+    <Compile Include="Editors\CSWords.cs" />
+    <Compile Include="Editors\Designers.cs" />
+    <Compile Include="Editors\SqlWords.cs" />
+    <Compile Include="Gui\AbstractMargin.cs" />
+    <Compile Include="Gui\BracketHighlighter.cs" />
+    <Compile Include="Gui\BrushRegistry.cs" />
+    <Compile Include="Gui\Caret.cs" />
+    <Compile Include="Gui\CompletionWindow\AbstractCompletionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CompletionWindow\CodeCompletionListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\CompletionWindow\CodeCompletionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CompletionWindow\DeclarationViewWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CompletionWindow\ICompletionData.cs" />
+    <Compile Include="Gui\CompletionWindow\ICompletionDataProvider.cs" />
+    <Compile Include="Gui\FoldMargin.cs" />
+    <Compile Include="Gui\GutterMargin.cs" />
+    <Compile Include="Gui\HRuler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\IconBarMargin.cs" />
+    <Compile Include="Gui\Ime.cs" />
+    <Compile Include="Gui\InsightWindow\IInsightDataProvider.cs" />
+    <Compile Include="Gui\InsightWindow\InsightWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\TextArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\TextAreaClipboardHandler.cs" />
+    <Compile Include="Gui\TextAreaControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\TextAreaDragDropHandler.cs" />
+    <Compile Include="Gui\TextAreaMouseHandler.cs" />
+    <Compile Include="Gui\TextAreaUpdate.cs" />
+    <Compile Include="Gui\TextEditorControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\TextView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Undo\IUndoableOperation.cs" />
+    <Compile Include="Undo\UndoableDelete.cs" />
+    <Compile Include="Undo\UndoableInsert.cs" />
+    <Compile Include="Undo\UndoableReplace.cs" />
+    <Compile Include="Undo\UndoQueue.cs" />
+    <Compile Include="Undo\UndoStack.cs" />
+    <Compile Include="Util\LookupTable.cs" />
+    <Compile Include="Util\RtfWriter.cs" />
+    <Compile Include="Util\TextUtility.cs" />
+    <Compile Include="Util\TipPainter.cs" />
+    <Compile Include="Util\TipPainterTools.cs" />
+    <Compile Include="Util\TipSection.cs" />
+    <Compile Include="Util\TipSpacer.cs" />
+    <Compile Include="Util\TipSplitter.cs" />
+    <Compile Include="Util\TipText.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\SyntaxEditor.key" />
+    <EmbeddedResource Include="data\Mode.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\syntaxmodes\ASPX.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\BAT-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\Coco-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\CPP-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\CSharp-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\HTML-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\ILAsm-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\Java-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\JavaScript-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\ORACLESQL-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\PHP-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\SQL-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\SQL2-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\Tex-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\VBNET-Mode.xshd" />
+    <EmbeddedResource Include="data\syntaxmodes\XML-Mode.xshd" />
+    <None Include="MControl.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="data\SyntaxEditor.bmp" />
+    <EmbeddedResource Include="data\SyntaxModes.xml" />
+    <EmbeddedResource Include="data\RightArrow.cur" />
+    <None Include="data\Mode.xsx">
+      <DependentUpon>Mode.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Dialog\BaseDialog.resx">
+      <DependentUpon>BaseDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\GotoLineDlg.resx">
+      <DependentUpon>GotoLineDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SearchDlg.resx">
+      <DependentUpon>SearchDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SnippetsDlg.resx">
+      <DependentUpon>SnippetsDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialog\PrintDlg.resx">
+      <DependentUpon>PrintDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\IntelliWindow.resx">
+      <DependentUpon>IntelliWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\SyntaxEditor.bmp" />
+    <EmbeddedResource Include="Editors\Designers.resx">
+      <DependentUpon>Designers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editors\TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Editors\back\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WinForms\WinForms\WinForms.csproj">
+      <Project>{c26b37c8-bc2a-4c9c-b0bd-e6e9e5c8d0b0}</Project>
+      <Name>WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win\Win\Win.csproj">
+      <Project>{1E47FD52-925B-4F29-BDDE-A4233BE7B8A9}</Project>
+      <Name>Win</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

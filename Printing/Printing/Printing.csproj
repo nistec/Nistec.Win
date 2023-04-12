@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nistec.Printing</RootNamespace>
+    <AssemblyName>Nistec.Printing</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\References\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\References\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nistec.Lib, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ado\AdoColumn.cs" />
+    <Compile Include="Ado\AdoColumns.cs" />
+    <Compile Include="Ado\AdoEvents.cs" />
+    <Compile Include="Ado\AdoExport.cs" />
+    <Compile Include="Ado\AdoField.cs" />
+    <Compile Include="Ado\AdoImport.cs" />
+    <Compile Include="Ado\AdoManager.cs" />
+    <Compile Include="Ado\AdoMap.cs" />
+    <Compile Include="Ado\AdoRead.cs" />
+    <Compile Include="Ado\AdoState.cs" />
+    <Compile Include="Ado\AdoTable.cs" />
+    <Compile Include="Ado\AdoWrite.cs" />
+    <Compile Include="Ado\AdoOutput.cs" />
+    <Compile Include="Ado\DataHelper.cs" />
+    <Compile Include="Ado\Enums.cs" />
+    <Compile Include="Ado\Interfaces.cs" />
+    <Compile Include="Ado\AdoProperties.cs" />
+    <Compile Include="Ado\QueryType.cs" />
+    <Compile Include="Clipboard\ClipboardRead.cs" />
+    <Compile Include="Clipboard\ClipboardReadProperties.cs" />
+    <Compile Include="Clipboard\Helper.cs" />
+    <Compile Include="Csv\CsvRead.cs" />
+    <Compile Include="Csv\CsvReadProperties.cs" />
+    <Compile Include="Csv\CsvWrite.cs" />
+    <Compile Include="Csv\CsvWriteProperties.cs" />
+    <Compile Include="Csv\FileTypes.cs" />
+    <Compile Include="Csv\Helper.cs" />
+    <Compile Include="Csv\RecordSeparators.cs" />
+    <Compile Include="Custom\CustomTable.cs" />
+    <Compile Include="Custom\CustomTableProperties.cs" />
+    <Compile Include="Html\HtmlHelper.cs" />
+    <Compile Include="Html\HtmlWrite.cs" />
+    <Compile Include="Html\HtmlWriteProperties.cs" />
+    <Compile Include="MSExcel\BIFF12\BIFF12Reader.cs" />
+    <Compile Include="MSExcel\BIFF12\Comments.cs" />
+    <Compile Include="MSExcel\BIFF12\Connections.cs" />
+    <Compile Include="MSExcel\BIFF12\Constants.cs" />
+    <Compile Include="MSExcel\BIFF12\ExcelRead.cs" />
+    <Compile Include="MSExcel\BIFF12\OleReader.cs" />
+    <Compile Include="MSExcel\BIFF12\PrinterSettings.cs" />
+    <Compile Include="MSExcel\BIFF12\QueryTable.cs" />
+    <Compile Include="MSExcel\BIFF12\SharedStrings.cs" />
+    <Compile Include="MSExcel\BIFF12\Styles.cs" />
+    <Compile Include="MSExcel\BIFF12\Table.cs" />
+    <Compile Include="MSExcel\BIFF12\Workbook.cs" />
+    <Compile Include="MSExcel\BIFF12\Worksheet.cs" />
+    <Compile Include="MSExcel\BIFF8\Core.cs" />
+    <Compile Include="MSExcel\BIFF8\ExcelDataReader.cs" />
+    <Compile Include="MSExcel\BIFF8\ExcelRead.cs" />
+    <Compile Include="MSExcel\Common\ExcelRead.cs" />
+    <Compile Include="MSExcel\Common\ExcelTool.cs" />
+    <Compile Include="MSExcel\Common\ExcelType.cs" />
+    <Compile Include="MSExcel\Common\ExcelWrite.cs" />
+    <Compile Include="MSExcel\ExcelReadProperties.cs" />
+    <Compile Include="MSExcel\ExcelWriteProperties.cs" />
+    <Compile Include="MSExcel\OleDb\ExcelRead.cs" />
+    <Compile Include="MSExcel\OleDb\ExcelWrite.cs" />
+    <Compile Include="MSExcel\OleDb\Helper.cs" />
+    <Compile Include="MSExcel\Xml\ExcelRead.cs" />
+    <Compile Include="MSExcel\Xml\ExcelWrite.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\AlignmentOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\AlignmentOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\BorderOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\BorderOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Cell.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\CellCollection.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\CellIndexInfo.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\CellSettings.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Column.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\DocumentProperties.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Enums.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\FontOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\FontOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Formula.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\FormulaParser.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Interfaces.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\InteriorOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\InteriorOptionsCache.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\NamedRange.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Parameter.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\PrintOptions.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Range.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Row.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Styles.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Workbook.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\Worksheet.cs" />
+    <Compile Include="MSExcel\Xml\ExcelXml\XmlStyle.cs" />
+    <Compile Include="MSExcel\Xml\Helper.cs" />
+    <Compile Include="Pdf\PdfWrite.cs" />
+    <Compile Include="Pdf\PdfWriteProperties.cs" />
+    <Compile Include="Printing\Document\ReportBuilder.Text.cs" />
+    <Compile Include="Printing\Document\ReportBuilder.Data.cs" />
+    <Compile Include="PrintPreview\McPrintPreview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintPreview\McPrintPreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printing\Document\McPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Printing\Document\FormatColumnEventArgs.cs" />
+    <Compile Include="Printing\Document\IReport.cs" />
+    <Compile Include="Printing\Document\Margins.cs" />
+    <Compile Include="Printing\Document\ReportBuilder.cs" />
+    <Compile Include="Printing\Document\ReportDataColumn.cs" />
+    <Compile Include="Printing\Sections\LayeredSections.cs" />
+    <Compile Include="Printing\Sections\LinearRepeatableSections.cs" />
+    <Compile Include="Printing\Sections\LinearSections.cs" />
+    <Compile Include="Printing\Sections\RepeatableTextSection.cs" />
+    <Compile Include="Printing\Sections\ReportSection.cs" />
+    <Compile Include="Printing\Sections\ReportSectionData.cs" />
+    <Compile Include="Printing\Sections\ReportSectionText.cs" />
+    <Compile Include="Printing\Sections\SectionBox.cs" />
+    <Compile Include="Printing\Sections\SectionBreak.cs" />
+    <Compile Include="Printing\Sections\SectionContainer.cs" />
+    <Compile Include="Printing\Sections\SectionImage.cs" />
+    <Compile Include="Printing\Sections\SectionLine.cs" />
+    <Compile Include="Printing\Style\Alignments.cs" />
+    <Compile Include="Printing\Style\BorderPens.cs" />
+    <Compile Include="Printing\Style\Bounds.cs" />
+    <Compile Include="Printing\Style\TextStyle.cs" />
+    <Compile Include="PrintPreview\PrintStatusDialog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrintDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PrintDlg.Designer.cs">
+      <DependentUpon>PrintDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\McPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\McPrint.Designer.cs">
+      <DependentUpon>McPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ImportDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImportDlg.Designer.cs">
+      <DependentUpon>ImportDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\McImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\McImport.Designer.cs">
+      <DependentUpon>McImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExportDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExportDlg.Designer.cs">
+      <DependentUpon>ExportDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\McExport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\McExport.Designer.cs">
+      <DependentUpon>McExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Common\InvoiceBuilder.cs" />
+    <Compile Include="View\Common\CSVprop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\Web\ImageWriter.cs" />
+    <Compile Include="View\Web\McCacheReport.cs" />
+    <Compile Include="View\Web\HtmlWriter.cs" />
+    <Compile Include="View\Common\ViewBuilder.cs" />
+    <Compile Include="View\Common\DataViewer.cs" />
+    <Compile Include="View\Common\Enums.cs" />
+    <Compile Include="View\Common\Htmlprop.cs" />
+    <Compile Include="View\Common\PDFprop.cs" />
+    <Compile Include="View\Common\ReportUtil.cs" />
+    <Compile Include="View\Common\ResexLibrary.cs" />
+    <Compile Include="View\Common\TIFprop.cs" />
+    <Compile Include="View\Web\WebViewer.cs" />
+    <Compile Include="View\DataReport\AggregateType.cs" />
+    <Compile Include="View\DataReport\ArrayEnumerator.cs" />
+    <Compile Include="View\DataReport\Border.cs" />
+    <Compile Include="View\DataReport\BorderLineStyle.cs" />
+    <Compile Include="View\DataReport\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\CollectionChange.cs" />
+    <Compile Include="View\DataReport\Common\mtd10.cs" />
+    <Compile Include="View\DataReport\Common\mtd102.cs" />
+    <Compile Include="View\DataReport\Common\mtd118.cs" />
+    <Compile Include="View\DataReport\Common\mtd119.cs" />
+    <Compile Include="View\DataReport\Common\mtd120.cs" />
+    <Compile Include="View\DataReport\Common\mtd121.cs" />
+    <Compile Include="View\DataReport\Common\mtd122.cs" />
+    <Compile Include="View\DataReport\Common\mtd123.cs" />
+    <Compile Include="View\DataReport\Common\mtd124.cs" />
+    <Compile Include="View\DataReport\Common\mtd125.cs" />
+    <Compile Include="View\DataReport\Common\mtd126.cs" />
+    <Compile Include="View\DataReport\Common\mtd127.cs" />
+    <Compile Include="View\DataReport\Common\mtd136.cs" />
+    <Compile Include="View\DataReport\Common\mtd141.cs" />
+    <Compile Include="View\DataReport\Common\mtd148.cs" />
+    <Compile Include="View\DataReport\Common\mtd149.cs" />
+    <Compile Include="View\DataReport\Common\mtd152.cs" />
+    <Compile Include="View\DataReport\Common\mtd155.cs" />
+    <Compile Include="View\DataReport\Common\mtd156.cs" />
+    <Compile Include="View\DataReport\Common\mtd158.cs" />
+    <Compile Include="View\DataReport\Common\mtd159.cs" />
+    <Compile Include="View\DataReport\Common\mtd161.cs" />
+    <Compile Include="View\DataReport\Common\mtd163.cs" />
+    <Compile Include="View\DataReport\Common\mtd164.cs" />
+    <Compile Include="View\DataReport\Common\mtd169.cs" />
+    <Compile Include="View\DataReport\Common\mtd170.cs" />
+    <Compile Include="View\DataReport\Common\mtd171.cs" />
+    <Compile Include="View\DataReport\Common\mtd180.cs" />
+    <Compile Include="View\DataReport\Common\mtd183.cs" />
+    <Compile Include="View\DataReport\Common\mtd195.cs" />
+    <Compile Include="View\DataReport\Common\mtd196.cs" />
+    <Compile Include="View\DataReport\Common\mtd197.cs" />
+    <Compile Include="View\DataReport\Common\mtd198.cs" />
+    <Compile Include="View\DataReport\Common\mtd202.cs" />
+    <Compile Include="View\DataReport\Common\mtd207.cs" />
+    <Compile Include="View\DataReport\Common\mtd209.cs" />
+    <Compile Include="View\DataReport\Common\mtd22.cs" />
+    <Compile Include="View\DataReport\Common\mtd220.cs" />
+    <Compile Include="View\DataReport\Common\mtd221.cs" />
+    <Compile Include="View\DataReport\Common\mtd222.cs" />
+    <Compile Include="View\DataReport\Common\mtd223.cs" />
+    <Compile Include="View\DataReport\Common\mtd224.cs" />
+    <Compile Include="View\DataReport\Common\mtd226.cs" />
+    <Compile Include="View\DataReport\Common\mtd228.cs" />
+    <Compile Include="View\DataReport\Common\mtd23.cs" />
+    <Compile Include="View\DataReport\Common\mtd230.cs" />
+    <Compile Include="View\DataReport\Common\mtd231.cs" />
+    <Compile Include="View\DataReport\Common\mtd233.cs" />
+    <Compile Include="View\DataReport\Common\mtd234.cs" />
+    <Compile Include="View\DataReport\Common\mtd24.cs" />
+    <Compile Include="View\DataReport\Common\mtd245.cs" />
+    <Compile Include="View\DataReport\Common\mtd247.cs" />
+    <Compile Include="View\DataReport\Common\mtd248.cs" />
+    <Compile Include="View\DataReport\Common\mtd249.cs" />
+    <Compile Include="View\DataReport\Common\mtd25.cs" />
+    <Compile Include="View\DataReport\Common\mtd250.cs" />
+    <Compile Include="View\DataReport\Common\mtd251.cs" />
+    <Compile Include="View\DataReport\Common\mtd252.cs" />
+    <Compile Include="View\DataReport\Common\mtd255.cs" />
+    <Compile Include="View\DataReport\Common\mtd256.cs" />
+    <Compile Include="View\DataReport\Common\mtd258.cs" />
+    <Compile Include="View\DataReport\Common\mtd26.cs" />
+    <Compile Include="View\DataReport\Common\mtd261.cs" />
+    <Compile Include="View\DataReport\Common\mtd263.cs" />
+    <Compile Include="View\DataReport\Common\mtd264.cs" />
+    <Compile Include="View\DataReport\Common\mtd266.cs" />
+    <Compile Include="View\DataReport\Common\mtd270.cs" />
+    <Compile Include="View\DataReport\Common\mtd272.cs" />
+    <Compile Include="View\DataReport\Common\mtd288.cs" />
+    <Compile Include="View\DataReport\Common\mtd289.cs" />
+    <Compile Include="View\DataReport\Common\mtd307.cs" />
+    <Compile Include="View\DataReport\Common\mtd314.cs" />
+    <Compile Include="View\DataReport\Common\mtd365.cs" />
+    <Compile Include="View\DataReport\Common\mtd373.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\Common\mtd5.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\Common\mtd56.cs" />
+    <Compile Include="View\DataReport\Common\mtd69.cs" />
+    <Compile Include="View\DataReport\Common\mtd72.cs" />
+    <Compile Include="View\DataReport\Common\mtd73.cs" />
+    <Compile Include="View\DataReport\Common\mtd76.cs" />
+    <Compile Include="View\DataReport\Common\mtd77.cs" />
+    <Compile Include="View\DataReport\Common\mtd78.cs" />
+    <Compile Include="View\DataReport\Common\mtd79.cs" />
+    <Compile Include="View\DataReport\Common\mtd80.cs" />
+    <Compile Include="View\DataReport\Common\mtd83.cs" />
+    <Compile Include="View\DataReport\Common\mtd85.cs" />
+    <Compile Include="View\DataReport\Common\mtd88.cs" />
+    <Compile Include="View\DataReport\Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\ControlCollection.cs" />
+    <Compile Include="View\DataReport\ControlType.cs" />
+    <Compile Include="View\DataReport\DataFieldSchema.cs" />
+    <Compile Include="View\DataReport\DataFieldSchemaList.cs" />
+    <Compile Include="View\DataReport\Detail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\Dialog\OutputFormatDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\Dialog\ScriptEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\Document.cs" />
+    <Compile Include="View\DataReport\ExternalDataSource.cs" />
+    <Compile Include="View\DataReport\Field.cs" />
+    <Compile Include="View\DataReport\FieldsCollection.cs" />
+    <Compile Include="View\DataReport\FindInfo.cs" />
+    <Compile Include="View\DataReport\GroupFooter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\GroupHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\GroupKeepTogether.cs" />
+    <Compile Include="View\DataReport\IListDataSource.cs" />
+    <Compile Include="View\DataReport\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\Line.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\LineStyle.cs" />
+    <Compile Include="View\DataReport\Margins.cs" />
+    <Compile Include="View\DataReport\Methods.cs" />
+    <Compile Include="View\DataReport\Msg.cs" />
+    <Compile Include="View\DataReport\NewPage.cs" />
+    <Compile Include="View\DataReport\Page.cs" />
+    <Compile Include="View\DataReport\PageBreak.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\PageFooter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\PageHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\PageOrientation.cs" />
+    <Compile Include="View\DataReport\PagesCollection.cs" />
+    <Compile Include="View\DataReport\PageSettings.cs" />
+    <Compile Include="View\DataReport\PaperInfo.cs" />
+    <Compile Include="View\DataReport\PaperInfos.cs" />
+    <Compile Include="View\DataReport\PDFVersion.cs" />
+    <Compile Include="View\DataReport\Picture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\PictureAlignment.cs" />
+    <Compile Include="View\DataReport\PrinterCollate.cs" />
+    <Compile Include="View\DataReport\PrinterDuplex.cs" />
+    <Compile Include="View\DataReport\Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\ReportFooter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\ReportHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\ReportState.cs" />
+    <Compile Include="View\DataReport\RichText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\RTFStreamer.cs" />
+    <Compile Include="View\DataReport\ScriptLanguage.cs" />
+    <Compile Include="View\DataReport\Section.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\SectionCollection.cs" />
+    <Compile Include="View\DataReport\SectionType.cs" />
+    <Compile Include="View\DataReport\Shape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\ShapeStyle.cs" />
+    <Compile Include="View\DataReport\SizeMode.cs" />
+    <Compile Include="View\DataReport\SubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\SummaryRunning.cs" />
+    <Compile Include="View\DataReport\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataReport\XmlDataSource.cs" />
+    <Compile Include="View\Design\ReportDesign.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Export\Html\FileImageSource.cs" />
+    <Compile Include="View\Export\Html\HtmlCharacterSet.cs" />
+    <Compile Include="View\Export\Html\HTMLDocument.cs" />
+    <Compile Include="View\Export\Html\HTMLineStyle.cs" />
+    <Compile Include="View\Export\Html\ImageSource.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd620.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd624.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd625.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd626.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd627.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd628.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd630.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd631.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd632.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd633.cs" />
+    <Compile Include="View\Export\Html\Internal\mtd634.cs" />
+    <Compile Include="View\Export\Image\ImageDocument.cs" />
+    <Compile Include="View\Export\Pdf\Encryption.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1000.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1010.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1011.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1012.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1013.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1014.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1015.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1016.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1017.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1018.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1019.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1020.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1021.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1022.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1033.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1043.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1047.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1048.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1049.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1055.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1057.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1058.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1059.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1061.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1062.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd1071.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd227.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd230.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd238.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd242.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd42.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd51.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd60.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd620.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd63.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd638.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd639.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd640.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd641.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd642.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd643.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd652.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd654.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd656.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd658.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd665.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd672.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd684.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd688.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd689.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd693.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd696.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd699.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd702.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd703.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd705.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd707.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd708.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd711.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd712.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd716.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd719.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd722.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd725.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd726.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd727.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd741.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd742.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd746.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd747.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd757.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd761.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd762.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd776.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd785.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd787.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd796.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd798.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd803.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd805.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd806.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd807.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd811.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd819.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd820.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd821.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd823.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd825.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd829.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd831.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd840.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd841.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd843.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd844.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd852.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd861.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd862.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd863.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd864.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd865.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd866.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd867.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd868.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd875.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd876.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd881.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd903.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd91.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd916.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd931.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd942.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd944.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd952.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd954.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd955.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd956.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd957.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd961.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd966.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd979.cs" />
+    <Compile Include="View\Export\Pdf\internal\mtd984.cs" />
+    <Compile Include="View\Export\Pdf\PageMode.cs" />
+    <Compile Include="View\Export\Pdf\PageOrientation.cs" />
+    <Compile Include="View\Export\Pdf\PageRotate.cs" />
+    <Compile Include="View\Export\Pdf\PDFDocument.cs" />
+    <Compile Include="View\Export\Pdf\PDFWriterException.cs" />
+    <Compile Include="View\Export\Pdf\SecurityManager.cs" />
+    <Compile Include="View\Export\Pdf\StandardFonts.cs" />
+    <Compile Include="View\Export\Pdf\TextAlignment.cs" />
+    <Compile Include="View\Templates\BaseTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Templates\InvoiceEN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Templates\InvoiceIL.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Templates\InvoiceTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Templates\ReportTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Templates\TemplatesType.cs" />
+    <Compile Include="View\Viewer\Enums.cs" />
+    <Compile Include="View\Viewer\ExportDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Viewer\FindDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Viewer\PrintViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Viewer\ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Viewer\ViewerBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Viewer\ViewerBarDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xml\XMLDatabase.cs" />
+    <Compile Include="Xml\XmlRead.cs" />
+    <Compile Include="Xml\XmlReadProperties.cs" />
+    <Compile Include="Xml\XmlWrite.cs" />
+    <Compile Include="Xml\XmlWriteProperties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrintPreview\McPrintPreviewDialog.resx">
+      <DependentUpon>McPrintPreviewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\Document\McPrintDocument.resx">
+      <DependentUpon>McPrintDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Preview.bmp" />
+    <EmbeddedResource Include="Images\PreviewDlg.bmp" />
+    <EmbeddedResource Include="Images\Print.bmp" />
+    <EmbeddedResource Include="Images\PrintSetup.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Document.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrintDlg.resx">
+      <DependentUpon>PrintDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\McPrint.resx">
+      <DependentUpon>McPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ImportDlg.resx">
+      <DependentUpon>ImportDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\McImport.resx">
+      <DependentUpon>McImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExportDlg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExportDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\McExport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>McExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataReport\Dialog\OutputFormatDlg.resx">
+      <DependentUpon>OutputFormatDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataReport\Dialog\ScriptEditor.resx">
+      <DependentUpon>ScriptEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Design\ReportDesign.resx">
+      <DependentUpon>ReportDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Resources\PaperHeight.resx" />
+    <EmbeddedResource Include="View\Resources\PaperSize.resx" />
+    <EmbeddedResource Include="View\Resources\PaperWidth.resx" />
+    <EmbeddedResource Include="View\Templates\BaseTemplate.resx">
+      <DependentUpon>BaseTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Templates\InvoiceEN.resx">
+      <DependentUpon>InvoiceEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Templates\InvoiceIL.resx">
+      <DependentUpon>InvoiceIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Templates\InvoiceTemplate.resx">
+      <DependentUpon>InvoiceTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Templates\ReportTemplate.resx">
+      <DependentUpon>ReportTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Viewer\ExportDlg.resx">
+      <DependentUpon>ExportDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Viewer\FindDlg.resx">
+      <DependentUpon>FindDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Viewer\PrintViewer.resx">
+      <DependentUpon>PrintViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Viewer\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Viewer\ViewerBar.resx">
+      <DependentUpon>ViewerBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Viewer\ViewerBarDesigner.resx">
+      <DependentUpon>ViewerBarDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="View\Resources\Border.bmp" />
+    <Content Include="View\Resources\CheckBox.bmp" />
+    <Content Include="View\Resources\DataBase.bmp" />
+    <Content Include="View\Resources\Detail.bmp" />
+    <Content Include="View\Resources\ImagesCaptionIDE.bmp" />
+    <Content Include="View\Resources\ImagesDesigner.bmp" />
+    <Content Include="View\Resources\ImagesNetReport.bmp" />
+    <Content Include="View\Resources\ImagesToolbox.bmp" />
+    <Content Include="View\Resources\Label.bmp" />
+    <Content Include="View\Resources\Line.bmp" />
+    <Content Include="View\Resources\mCtlIcon.bmp" />
+    <Content Include="View\Resources\PageBreak.bmp" />
+    <Content Include="View\Resources\Picture.bmp" />
+    <Content Include="View\Resources\Report.bmp" />
+    <Content Include="View\Resources\RichText.bmp" />
+    <Content Include="View\Resources\Shape.bmp" />
+    <Content Include="View\Resources\SubReport.bmp" />
+    <Content Include="View\Resources\TextBox.bmp" />
+    <Content Include="View\Resources\WinReport.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Csv\CsvReader\" />
+    <Folder Include="View\Design\Common\" />
+    <Folder Include="View\Design\Dialog\" />
+    <Folder Include="View\Design\Internal\" />
+    <Folder Include="View\Templates\bck\" />
+    <Folder Include="View\UserDesign\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MControl.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Win\Win\Win.csproj">
+      <Project>{1E47FD52-925B-4F29-BDDE-A4233BE7B8A9}</Project>
+      <Name>Win</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

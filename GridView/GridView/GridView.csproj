@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{151EB702-E8E7-478E-A018-8E03F14CFDE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nistec.GridView</RootNamespace>
+    <AssemblyName>Nistec.GridView</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/MControl.GridView/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\References\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\References\Debug\mControl.GridView.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\References\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\References\Release\Nistec.GridView.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Nistec.Data, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Nistec.Lib, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\References\Debug\Nistec.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collection\GridStatusBarCollection.cs">
+    </Compile>
+    <Compile Include="Collection\GridColumnCollection.cs" />
+    <Compile Include="Collection\GridItemCollection.cs" />
+    <Compile Include="Columns\GridDateColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridBoolColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridIconTextColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridMemoColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\VGridColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridEnumColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridNumericColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridButtonColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridComboColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridControlColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridIconColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridLabelColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridMultiColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridProgressColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Columns\GridTextColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\Events.cs" />
+    <Compile Include="Common\Interfaces.cs" />
+    <Compile Include="Common\NativeMethods.cs" />
+    <Compile Include="Dialog\GridChartDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridItems\GridRelation.cs" />
+    <Compile Include="GridItems\GridTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridView\GridChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridView\GridChart.Designer.cs">
+      <DependentUpon>GridChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridView\Grid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\GridColumnContexMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\GridContexMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridMemoBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridSpinEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridCombBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridMultiBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GridTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\VGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\GridVirtualDesigner.cs" />
+    <Compile Include="Design\VGridDesigner.cs" />
+    <Compile Include="Design\DesignBindingPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\GridColumnCollectionEditor.cs" />
+    <Compile Include="Design\GridColumnMappingNameEditor.cs" />
+    <Compile Include="Design\GridDesigner.cs" />
+    <Compile Include="Design\GridTableMappingNameEditor.cs" />
+    <Compile Include="Dialog\ColumnFilterDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\VGridDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\VGridDlg.Designer.cs">
+      <DependentUpon>VGridDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\FindDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DimensionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\GridFilterDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\GridPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridItems\ColumnsVisibilty.cs" />
+    <Compile Include="GridItems\GridCell.cs" />
+    <Compile Include="GridItems\GridColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\GridColumnWidthConvertor.cs" />
+    <Compile Include="GridItems\GridItem.cs" />
+    <Compile Include="GridItems\GridNewRow.cs" />
+    <Compile Include="GridItems\GridPerform.cs" />
+    <Compile Include="GridItems\GridRow.cs" />
+    <Compile Include="GridItems\GridState.cs" />
+    <Compile Include="GridItems\GridStatusPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridView\GridStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\GridToolTip.cs" />
+    <Compile Include="GridItems\Triangle.cs" />
+    <Compile Include="GridView\VGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridItems\GridCaption.cs" />
+    <Compile Include="GridItems\GridRelationRow.cs" />
+    <Compile Include="GridView\VGridSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridView\GridVirtual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Columns\GridLabelColumn.resx">
+      <DependentUpon>GridLabelColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Columns\GridProgressColumn.resx">
+      <DependentUpon>GridProgressColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GridControl.resx">
+      <DependentUpon>GridControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ColumnFilterDlg.resx">
+      <DependentUpon>ColumnFilterDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DimensionDlg.resx">
+      <DependentUpon>DimensionDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\GridFilterDlg.resx">
+      <DependentUpon>GridFilterDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\GridPreview.resx">
+      <DependentUpon>GridPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridItems\GridColumn.resx">
+      <DependentUpon>GridColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Images\Grid.bmp" />
+    <EmbeddedResource Include="Images\collapsed.gif" />
+    <EmbeddedResource Include="Images\expaned.gif" />
+    <EmbeddedResource Include="Images\Grid.bmp" />
+    <EmbeddedResource Include="Images\GridCaption.backarrow.bmp" />
+    <EmbeddedResource Include="Images\GridCaption.backarrow_bidi.bmp" />
+    <EmbeddedResource Include="Images\GridCaption.Details.bmp" />
+    <EmbeddedResource Include="Images\GridCaption.down.bmp" />
+    <EmbeddedResource Include="Images\GridCaption.right.bmp" />
+    <EmbeddedResource Include="Images\GridCaption.Tables.bmp" />
+    <EmbeddedResource Include="Images\GridCaption.up.bmp" />
+    <EmbeddedResource Include="Images\GridParentRows.LeftArrow.bmp" />
+    <EmbeddedResource Include="Images\GridParentRows.RightArrow.bmp" />
+    <EmbeddedResource Include="Images\GridRow.error.bmp" />
+    <EmbeddedResource Include="Images\GridRow.left.bmp" />
+    <EmbeddedResource Include="Images\GridRow.pencil.bmp" />
+    <EmbeddedResource Include="Images\GridRow.right.bmp" />
+    <EmbeddedResource Include="Images\GridRow.star.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\GridRow.pencilRow.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\GridRow.pencilRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Columns\GridEnumColumn.resx">
+      <DependentUpon>GridEnumColumn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\FindDlg.resx">
+      <DependentUpon>FindDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridView\VGrid.resx">
+      <DependentUpon>VGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\GridRow.pencilLeft.bmp" />
+    <EmbeddedResource Include="Resources\SR.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SR.he.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Images\VGrid.bmp" />
+    <EmbeddedResource Include="GridView\GridVirtual.resx">
+      <DependentUpon>GridVirtual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Images\GridVirtual.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\GridVirtual.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\GridControlBase.resx">
+      <DependentUpon>GridControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VGridControl.resx">
+      <DependentUpon>VGridControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\VGridDlg.resx">
+      <DependentUpon>VGridDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridView\GridStatusBar.resx">
+      <DependentUpon>GridStatusBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\VGrid.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridItems\GridColumnContexMenu.resx">
+      <DependentUpon>GridColumnContexMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridItems\GridContexMenu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GridContexMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\GridStatusBar.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MControl.pfx" />
+    <None Include="Resources\undo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filterRemove.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fit_to_size.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoff_small.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printp1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\column.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcha2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piecha1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sum.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialog\GridChartDlg.resx">
+      <DependentUpon>GridChartDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridItems\GridTable.resx">
+      <DependentUpon>GridTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridView\GridChart.resx">
+      <DependentUpon>GridChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\GridChart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grd73c1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expression_obj.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueOK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbcanc1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\se2ae31.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printicon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SameHeight.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autosize.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filterSelection.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Columns\_Obsolete\" />
+    <Folder Include="Controls\BCK\" />
+    <Folder Include="Data\" />
+    <Folder Include="Develop\" />
+    <Folder Include="Diagram\" />
+    <Folder Include="Dialog\BCK\" />
+    <Folder Include="GridItems\Menu\" />
+    <Folder Include="GridItems\Multi\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Charts\Charts\Charts.csproj">
+      <Project>{f0759da6-4e9c-4d9b-bd53-2eb38979425d}</Project>
+      <Name>Charts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Printing\Printing\Printing.csproj">
+      <Project>{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}</Project>
+      <Name>Printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WinForms\WinForms\WinForms.csproj">
+      <Project>{c26b37c8-bc2a-4c9c-b0bd-e6e9e5c8d0b0}</Project>
+      <Name>WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win\Win\Win.csproj">
+      <Project>{1E47FD52-925B-4F29-BDDE-A4233BE7B8A9}</Project>
+      <Name>Win</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

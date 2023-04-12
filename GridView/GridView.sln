@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridView", "GridView\GridView.csproj", "{151EB702-E8E7-478E-A018-8E03F14CFDE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridViewTest", "GridViewTest\GridViewTest.csproj", "{CC82D91D-B9A7-4B94-893B-F96B6F0818D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{151EB702-E8E7-478E-A018-8E03F14CFDE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151EB702-E8E7-478E-A018-8E03F14CFDE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151EB702-E8E7-478E-A018-8E03F14CFDE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151EB702-E8E7-478E-A018-8E03F14CFDE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC82D91D-B9A7-4B94-893B-F96B6F0818D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC82D91D-B9A7-4B94-893B-F96B6F0818D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC82D91D-B9A7-4B94-893B-F96B6F0818D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC82D91D-B9A7-4B94-893B-F96B6F0818D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

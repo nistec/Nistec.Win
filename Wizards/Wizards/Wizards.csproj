@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{632429A7-64BD-4AEB-AF2A-65F3315F7422}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nistec.Wizards</RootNamespace>
+    <AssemblyName>Nistec.Wizards</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/MControl.Wizards/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\References\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\References\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nistec.Lib, Version=4.0.2.0, Culture=neutral, PublicKeyToken=734a739868a76423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\References\Debug\Nistec.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\McNode.cs" />
+    <Compile Include="Common\RML.cs" />
+    <Compile Include="Common\Util.cs" />
+    <Compile Include="Wizards\McLookup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\McTabList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\McGroupsEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\McGroupsEditor.designer.cs">
+      <DependentUpon>McGroupsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\Design\McTabListDesigner.cs" />
+    <Compile Include="Wizards\Design\McManagmentDesigner.cs" />
+    <Compile Include="Wizards\Design\McTabPanelDesigner.cs" />
+    <Compile Include="Wizards\McWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\McTabPanles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\McTabTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\Design\McTabTreeDesigner.cs" />
+    <Compile Include="Wizards\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\WizardPageCollection.cs">
+    </Compile>
+    <Compile Include="Wizards\Design\DesignerBase.cs" />
+    <Compile Include="Wizards\Design\McWizardDesigner.cs" />
+    <Compile Include="Wizards\Design\McEditListDesigner.cs" />
+    <Compile Include="Wizards\Design\McPageDesigner.cs" />
+    <Compile Include="Wizards\McEditList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\McListFinder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizards\McRichText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizards\McManagment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbox\McEditList.bmp" />
+    <EmbeddedResource Include="Toolbox\WizCtl.bmp" />
+    <EmbeddedResource Include="Toolbox\WizDialog.bmp" />
+    <EmbeddedResource Include="Toolbox\McListFinder.bmp" />
+    <EmbeddedResource Include="Wizards\McEditList.resx">
+      <DependentUpon>McEditList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\McListFinder.resx">
+      <DependentUpon>McListFinder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Toolbox\McTabPanels.bmp" />
+    <EmbeddedResource Include="Toolbox\McTabTree.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Wizards\McLookup.resx">
+      <DependentUpon>McLookup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\McTabList.resx">
+      <DependentUpon>McTabList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\McGroupsEditor.resx">
+      <DependentUpon>McGroupsEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\McRichText.bmp" />
+    <EmbeddedResource Include="Wizards\McWizard.resx">
+      <DependentUpon>McWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\McTabPanles.resx">
+      <DependentUpon>McTabPanles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\McTabTree.resx">
+      <DependentUpon>McTabTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\McRichText.resx">
+      <DependentUpon>McRichText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\McWizard.bmp" />
+    <EmbeddedResource Include="Images\mCtlIcon32.bmp" />
+    <EmbeddedResource Include="Toolbox\McManagment.bmp" />
+    <EmbeddedResource Include="Wizards\McManagment.resx">
+      <DependentUpon>McManagment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="MControl.pfx" />
+    <None Include="Resources\algorithm.gif" />
+    <None Include="Resources\barcha2.gif" />
+    <None Include="Resources\blueOK.gif" />
+    <None Include="Resources\bottom.gif" />
+    <None Include="Resources\category_obj.gif" />
+    <None Include="Resources\column.gif" />
+    <None Include="Resources\copy.gif" />
+    <None Include="Resources\cut.gif" />
+    <None Include="Resources\dbcanc1.gif" />
+    <None Include="Resources\dbdele1.gif" />
+    <None Include="Resources\dbinse1.gif" />
+    <None Include="Resources\dbnext.gif" />
+    <None Include="Resources\dbpost.gif" />
+    <None Include="Resources\dbrefr1.gif" />
+    <None Include="Resources\delete.gif" />
+    <None Include="Resources\Export.gif" />
+    <None Include="Resources\filter.gif" />
+    <None Include="Resources\filter2.gif" />
+    <None Include="Resources\filterRemove.gif" />
+    <None Include="Resources\fit_to_size.gif" />
+    <None Include="Resources\logoff_small.gif" />
+    <None Include="Resources\newfile_wiz.gif" />
+    <None Include="Resources\news.gif" />
+    <None Include="Resources\paste.gif" />
+    <None Include="Resources\pie-chart.gif" />
+    <None Include="Resources\piecha1.gif" />
+    <None Include="Resources\printp1.gif" />
+    <None Include="Resources\record.gif" />
+    <None Include="Resources\saveHS.png" />
+    <None Include="Resources\search.gif" />
+    <None Include="Resources\select1.gif" />
+    <None Include="Resources\settings.gif" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\sum.gif" />
+    <None Include="Resources\summar1.gif" />
+    <None Include="Resources\undo.gif" />
+    <EmbeddedResource Include="Toolbox\McTabList.bmp" />
+    <EmbeddedResource Include="Toolbox\McGroupsEditor.bmp" />
+    <EmbeddedResource Include="Toolbox\McLookup.bmp" />
+    <Content Include="Wizards\WizRichImages\bold.gif" />
+    <Content Include="Wizards\WizRichImages\center.gif" />
+    <Content Include="Wizards\WizRichImages\Colors.gif" />
+    <Content Include="Wizards\WizRichImages\colors2.gif" />
+    <Content Include="Wizards\WizRichImages\copy.gif" />
+    <Content Include="Wizards\WizRichImages\cut.gif" />
+    <Content Include="Wizards\WizRichImages\font.gif" />
+    <Content Include="Wizards\WizRichImages\fontSize.gif" />
+    <Content Include="Wizards\WizRichImages\Image.gif" />
+    <Content Include="Wizards\WizRichImages\italic.gif" />
+    <Content Include="Wizards\WizRichImages\left.gif" />
+    <Content Include="Wizards\WizRichImages\open.gif" />
+    <Content Include="Wizards\WizRichImages\paste.gif" />
+    <Content Include="Wizards\WizRichImages\print.gif" />
+    <Content Include="Wizards\WizRichImages\Redo.gif" />
+    <Content Include="Wizards\WizRichImages\WizRichText.bmp" />
+    <Content Include="Wizards\WizRichImages\WizRichText.ico" />
+    <Content Include="Wizards\WizRichImages\right.gif" />
+    <Content Include="Wizards\WizRichImages\save.gif" />
+    <Content Include="Wizards\WizRichImages\stamp.gif" />
+    <Content Include="Wizards\WizRichImages\stamp2.gif" />
+    <Content Include="Wizards\WizRichImages\strikeout.gif" />
+    <Content Include="Wizards\WizRichImages\underline.gif" />
+    <Content Include="Wizards\WizRichImages\Undo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Wizards\back\Controls\back\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Printing\Printing\Printing.csproj">
+      <Project>{D88A851B-A6D6-4F42-85D4-B1CAF36FDACC}</Project>
+      <Name>Printing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WinForms\WinForms\WinForms.csproj">
+      <Project>{C26B37C8-BC2A-4C9C-B0BD-E6E9E5C8D0B0}</Project>
+      <Name>WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Win\Win\Win.csproj">
+      <Project>{1E47FD52-925B-4F29-BDDE-A4233BE7B8A9}</Project>
+      <Name>Win</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
