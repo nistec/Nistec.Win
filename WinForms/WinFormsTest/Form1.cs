@@ -26,7 +26,7 @@ namespace WinCtlTest
     
         private PopUpItem selectedStyle;
         private PopUpItem selectedLayout;
-        private PermsLevel currentLevel = PermsLevel.FullControl;
+        //private PermsLevel currentLevel = PermsLevel.FullControl;
 
         Nistec.WinForms.McPopUp ctlPopUp;
         private void InitPoUpMenu()
@@ -66,6 +66,7 @@ namespace WinCtlTest
                 case "tbResources":
                     break;
                 case "tbPermission":
+                    /*
                     switch(currentLevel)
                     {
                         case PermsLevel.FullControl:
@@ -83,7 +84,7 @@ namespace WinCtlTest
                     {
                         this.tbPermission.Enabled = true;
                     }
-
+                    */
                     break;
                 case "tbValidation":
                     break;

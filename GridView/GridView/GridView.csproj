@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Nistec.GridView</RootNamespace>
     <AssemblyName>Nistec.GridView</AssemblyName>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>MControl.pfx</AssemblyOriginatorKeyFile>
     <SccProjectName>
     </SccProjectName>
